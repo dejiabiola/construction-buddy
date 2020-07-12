@@ -1,0 +1,13 @@
+
+
+:root {
+  --header-font: 'Playfair Display', serif;
+  --text-font: 'Poppins', sans-serif;
+  --primary-color: #202020;
+  --secondary-color: #FFFFFF;
+  --grey-color: #777777;
+  --button-hover-color: rgb(49, 47, 47);
+  --black-color: #000000;
+  --footer-links-color: #CDCDCD;
+}
+
