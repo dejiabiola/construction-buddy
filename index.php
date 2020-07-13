@@ -1,8 +1,8 @@
-<!doctype html>
 <?php 
   session_start();
-  include('submit.php');
 ?>
+
+<!doctype html>
 <html lang="en">
   <head>
     <title>Title</title>
