@@ -24,14 +24,18 @@
     }
       
 
-
+    // Retrieve any email in db that matches $email
     $sql_e = "SELECT * FROM cb_mailing_list WHERE email='$email'";
     $res_e = mysqli_query($db, $sql_e);
 
+
+    // check if there's duplicate
     if(mysqli_num_rows($res_e) > 0){
       $_SESSION["error"] = "This email has already been registered 😜";
       header("Location:index.php");
   	} else {
+
+      // insert new wmail inside db
       $query = "INSERT INTO cb_mailing_list(email)values('$email')";
 
       $result = mysqli_query($db, $query);

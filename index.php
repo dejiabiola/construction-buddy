@@ -1,49 +1,5 @@
-<?php
-
-$status;
-
-//defining the database configuration here
-
-$db_host = 'localhost';
-$db_name = 'form';
-$db_user = "root";
-$db_password = "";
-$db_tablename = "cb_mailing_list";
-
-if (isset($_POST['email'])) {    
-  //check if Post_email is set
-  $email =  $_POST['email'];
-
-  // cleans the email inputed
-  $clean_email = filter_var($email, FILTER_SANITIZE_EMAIL); 
-
-  // validates the cleaned email using filter_validate_email
-  if (filter_var($clean_email, FILTER_VALIDATE_EMAIL)) {  
-    // create connection to database
-    $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
-
-    // testng connection
-    if(!$conn) {
-      die("Connection failed");
-    }
-
-    //query to insert to the db
-    $query = "INSERT INTO $db_tablename (EMAIL) VALUES ('$email')"; 
-
-    if(mysqli_query($conn, $query)) {
-      $status = "<p class='bg-success text-white p-2 mx-auto col-md-8'>Email has been registered </p>";
-    } else {
-      if(preg_match("/Duplicate/i", mysqli_error($conn))){
-        $status = "<p class='bg-danger text-white text-center p-2 mx-auto col-md-8'>Email already exists in the db 😏</p>";
-      } else {
-        $status = "<p class='bg-danger text-white text-center p-2 mx-auto col-md-8'>Something went wrong </p>";
-      }      
-    }
-    $conn->close();
-  } else {
-    $status = "<p class='bg-danger text-white text-center p-2 mx-auto col-md-8'>Invalid Email</p>";
-  }
-}
+<?php 
+  session_start();
 ?>
 
 <!doctype html>
@@ -55,21 +11,46 @@ if (isset($_POST['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <cript src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <style>
+      body {
+        background-image: linear-gradient( 95.2deg,  rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+      }
+    </style>
   </head>
   <body>
 
-  <h1 class="mt-5">Mailing List Submission</h1>
-
-    <form action="index.php" method="POST">
-      <input type="email" name="email" id="email" placeholder="Email username" >
-      <button type="submit">Submit</button>
+    
+    <div class="container mt-5 pt-5">
+      <h3 class="text-center" data-aos="fade-up">Subscribe to Mailing List</h3>
+      <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
+        <div class="row col-md-8 mx-auto d-flex flex-column">
+          <label for="email" class="m-0 mb-2">Email</label>
+          <input type="email"
+              class="form-control mb-3" name="email" id="email" placeholder="Enter email here">
+          <input class="submit p-2" name="submit" type="submit" value="Subscribe">
+        </div>
+      </form>
       <?php
-        if (isset($_POST['email'])) {
-          echo $status;
+        if(isset($_SESSION["error"])){
+            $error = $_SESSION["error"];
+            echo "<p class='text-center mt-1 bg-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
         }
-      ?> 
-    </form>
+        if(isset($_SESSION["success"])){
+            $success = $_SESSION["success"];
+            echo "<p class='text-center mt-1 bg-success p-3 text-white col-md-8 mx-auto'>$success</p>";
+        }
+      ?>  
+    </div>  
+
+
+
+
+
+
+
+
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -79,3 +60,13 @@ if (isset($_POST['email'])) {
   </body>
 </html>
 
+<?php
+    if(isset($_SESSION["error"])){
+      unset($_SESSION["error"]);
+      
+    }
+
+    if(isset($_SESSION["success"])){
+      unset($_SESSION["success"]);
+    }
+?>  
