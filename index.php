@@ -27,7 +27,7 @@
           <label for="email" class="m-0 mb-2">Email</label>
           <input type="email"
               class="form-control mb-3" name="email" id="email" placeholder="Enter email here">
-          <input class="submit" name="submit" type="submit" value="Subscribe">
+          <input class="submit p-2" name="submit" type="submit" value="Subscribe">
         </div>
       </form>
       <?php
