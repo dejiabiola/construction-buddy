@@ -33,9 +33,15 @@
       <?php
                     if(isset($_SESSION["error"])){
                         $error = $_SESSION["error"];
-                        echo "<p class='text-center mt-1'>$error</p>";
+                        echo "<p class='text-center mt-1 bg-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
                     }
                 ?>  
+      <?php
+                    if(isset($_SESSION["success"])){
+                        $message = $_SESSION["success"];
+                        echo "<p class='text-center mt-1 bg-success p-3 text-white col-md-8 mx-auto'>$message</p>";
+                    }
+                ?>   
     </div>
 
 
@@ -59,4 +65,5 @@
 
 <?php
     unset($_SESSION["error"]);
+    unset($_SESSION["success"]);
 ?>
