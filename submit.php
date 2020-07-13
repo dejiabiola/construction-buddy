@@ -1,12 +1,12 @@
 <?php
-  session_start();
-  error_reporting();
+  session_status();
+  die();
 
   $db_host = 'localhost';
-  $db_name = 'id14333629_admin123';
-  $db_user = "id14333629_dejiabiola";
-  $db_password = "SVsZg2asLxV>1=70";
-  $db_tablename = "emails";
+  $db_name = 'id14333629_deji';
+  $db_user = "id14333629_deji_ab";
+  $db_password = "l-79Xg/>sqeV8VZ]";
+  $db_tablename = "submissions";
 
 
   // Connect to the sql database
@@ -27,34 +27,32 @@
     if(!checkemail($email)){
       $_SESSION["error"] = "This email is invalid 💀";
       header("Location:index.php");
-      exit();
+      die();
     }
       
 
 
-    $sql_e = "SELECT * FROM emails WHERE email='$email'";
+    $sql_e = "SELECT * FROM submissions WHERE email='$email'";
     $res_e = mysqli_query($db, $sql_e);
 
     if(mysqli_num_rows($res_e) > 0){
       $_SESSION["error"] = "This email has already been registered 😜";
       header("Location:index.php");
   	} else {
-      $query = "INSERT INTO emails(email)values('$email')";
+      $query = "INSERT INTO submissions(email)values('$email')";
 
       $result = mysqli_query($db, $query);
     
 
 
       if ($result == true) {
-        echo "saved";
-        $_SESSION["error"] = "Registered successfully 😙";
+        $_SESSION["success"] = "Registered successfully 😙";
         header("Location:index.php");
-        exit();
+        die();
       } else {
-        echo "Omo, something wrong o 💀: " . mysqli_error($db);
         $_SESSION["error"] = "An error occured, try again";
         header("Location:index.php");
-        exit();
+        die();
       }
     }
 

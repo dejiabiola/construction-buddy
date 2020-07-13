@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  include('submit.php')
+  include('submit.php');
 ?>
 
 
@@ -23,6 +23,7 @@
     </style>
   </head>
   <body>
+
     
     <div class="container mt-5 pt-5">
       <h3 class="text-center" data-aos="fade-up">Subscribe to Mailing List</h3>
@@ -35,19 +36,16 @@
         </div>
       </form>
       <?php
-                    if(isset($_SESSION["error"])){
-                        $error = $_SESSION["error"];
-                        echo "<p class='text-center mt-1 bg-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
-                    }
-                ?>  
-      <?php
-                    if(isset($_SESSION["success"])){
-                        $error = $_SESSION["error"];
-                        echo "<p class='text-center mt-1 bg-success p-3 text-white col-md-8 mx-auto'>$error</p>";
-                    }
-                ?>  
-    </div>
-
+        if(isset($_SESSION["error"])){
+            $error = $_SESSION["error"];
+            echo "<p class='text-center mt-1 bg-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
+        }
+        if(isset($_SESSION["success"])){
+            $success = $_SESSION["success"];
+            echo "<p class='text-center mt-1 bg-success p-3 text-white col-md-8 mx-auto'>$success</p>";
+        }
+      ?>  
+    </div>  
 
 
 
