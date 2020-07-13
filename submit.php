@@ -32,14 +32,14 @@
       
 
 
-    $sql_e = "SELECT * FROM cb_mailing_list WHERE email='$email'";
+    $sql_e = "SELECT * FROM emails WHERE email='$email'";
     $res_e = mysqli_query($db, $sql_e);
 
     if(mysqli_num_rows($res_e) > 0){
       $_SESSION["error"] = "This email has already been registered 😜";
       header("Location:index.php");
   	} else {
-      $query = "INSERT INTO cb_mailing_list(email)values('$email')";
+      $query = "INSERT INTO emails(email)values('$email')";
 
       $result = mysqli_query($db, $query);
     
