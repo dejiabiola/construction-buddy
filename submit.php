@@ -31,7 +31,7 @@
     }
       
 
-    // Retrieve all existing email from DB
+    // Retrieve any email in db that matches $email
     $sql_e = "SELECT * FROM submissions WHERE email='$email'";
     $res_e = mysqli_query($db, $sql_e);
 
