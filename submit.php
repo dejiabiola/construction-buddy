@@ -1,6 +1,5 @@
 <?php
-  session_status();
-  die();
+
 
   $db_host = 'localhost';
   $db_name = 'id14333629_deji';
