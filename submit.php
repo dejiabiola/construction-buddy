@@ -39,7 +39,7 @@
       $_SESSION["error"] = "This email has already been registered 😜";
       header("Location:index.php");
   	} else {
-      $query = "INSERT INTO cb_mailing_list(id, email)values('$id', '$email')";
+      $query = "INSERT INTO cb_mailing_list(email)values('$email')";
 
       $result = mysqli_query($db, $query);
     
