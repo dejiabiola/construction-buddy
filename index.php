@@ -1,3 +1,10 @@
+<?php 
+  session_start();
+  include('submit.php')
+?>
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,7 +23,6 @@
     </style>
   </head>
   <body>
-  <?php include('submit.php') ?>
     
     <div class="container mt-5 pt-5">
       <h3 class="text-center" data-aos="fade-up">Subscribe to Mailing List</h3>
@@ -60,6 +66,12 @@
 </html>
 
 <?php
-    unset($_SESSION["error"]);
-    unset($_SESSION["success"]);
-?>
+    if(isset($_SESSION["error"])){
+      unset($_SESSION["error"]);
+      
+    }
+
+    if(isset($_SESSION["success"])){
+      unset($_SESSION["success"]);
+    }
+?>  

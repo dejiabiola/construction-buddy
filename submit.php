@@ -1,6 +1,6 @@
 <?php
-  error_reporting();
   session_start();
+  error_reporting();
 
   $db_host = 'localhost';
   $db_name = 'id14333629_admin123';
