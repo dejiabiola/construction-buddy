@@ -23,11 +23,11 @@
     <div class="container mt-5 pt-5">
       <h3 class="text-center" data-aos="fade-up">Subscribe to Mailing List</h3>
       <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
-        <div class="row col-md-8 mx-auto d-flex flex-column">
+        <div class="row col-md-8 mx-auto">
           <label for="email" class="m-0 mb-2">Email</label>
           <input type="email"
               class="form-control mb-3" name="email" id="email" placeholder="Enter email here">
-          <input class="submit" name="submit" type="submit" value="Subscribe">
+          <input class="submit p-2" name="submit" type="submit" value="Subscribe">
         </div>
       </form>
       <?php
