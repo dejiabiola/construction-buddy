@@ -25,7 +25,7 @@
     // VAlidate Email
     if(!checkemail($email)){
       $_SESSION["error"] = "This email is invalid 💀";
-      header("Location:index.php");
+      header("Location:mail-success.php");
       exit;
       die();
     }
@@ -38,7 +38,7 @@
     // Check if email exists
     if(mysqli_num_rows($res_e) > 0){
       $_SESSION["error"] = "This email has already been registered 😜";
-      header("Location:index.php");
+      header("Location:mail-success.php");
   	} else {
 
       // Insert new email inside DB
@@ -50,12 +50,12 @@
 
       if ($result == true) {
         $_SESSION["success"] = "Registered successfully 😙";
-        header("Location:index.php");
+        header("Location:mail-success.php");
         exit;
         die();
       } else {
         $_SESSION["error"] = "An error occured, try again";
-        header("Location:index.php");
+        header("Location:mail-success.php");
         exit;
         die();
       }
