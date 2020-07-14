@@ -38,6 +38,7 @@
 
       <h2>Coming Soon!</h2>
       <p class="col-md-8 mx-auto">Be the first to know when our site is up and running</p>
+      <!-- form that submits to the email to the backend and database -->
       <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
         <div class="mx-auto d-flex justify-content-center">
           <input type="email"
@@ -45,8 +46,19 @@
           <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
         </div>
       </form>
+      <?php
+        if(isset($_SESSION["error"])){
+            $error = $_SESSION["error"];
+            echo "<p class='text-center mt-1 bg-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
+        }
+        if(isset($_SESSION["success"])){
+            $success = $_SESSION["success"];
+            echo "<p class='text-center mt-1 bg-success p-3 text-white col-md-8 mx-auto'>$success</p>";
+        }
+      ?>  
     </div>
   </header>
+
 
   <main class="main-section">
     <div class="container-fluid">
@@ -123,18 +135,6 @@
         </div>
       </form>
   </footer>
-
-  
-      <?php
-        // if(isset($_SESSION["error"])){
-        //     $error = $_SESSION["error"];
-        //     echo "<p class='text-center mt-1 bg-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
-        // }
-        // if(isset($_SESSION["success"])){
-        //     $success = $_SESSION["success"];
-        //     echo "<p class='text-center mt-1 bg-success p-3 text-white col-md-8 mx-auto'>$success</p>";
-        // }
-      ?>  
 
 
 
