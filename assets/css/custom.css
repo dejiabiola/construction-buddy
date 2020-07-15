@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
 
 
 :root {
-  --header-font: 'Playfair Display', serif;
-  --text-font: 'Poppins', sans-serif;
+  --header-font: 'Optima', serif;
+  --text-font: 'Barlow', sans-serif;
   --primary-color: #141415;;
   --secondary-color: #FFFFFF;
   --grey-color: #777777;
@@ -12,6 +13,39 @@
   --black-color: #000000;
   --footer-links-color: #CDCDCD;
 }
+
+/* ***Optima font face*** */
+
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima'), url('../font/OPTIMA.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Optima Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Italic'), url('../font/Optima_Italic.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Optima Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Medium'), url('../font/Optima Medium.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Optima Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Optima Bold'), url('../font/OPTIMA_B.woff') format('woff');
+  }
 
 /* *** bootstrap override *** */
 p {
@@ -49,25 +83,26 @@ html {
 
 
 header {
-  padding-top: 123px;
   background: url("../images/grunge_construction.jpg") rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-blend-mode: multiply;
-  background-position: center center;
+  background-position: center 34%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   z-index: -9;
 }
+
 
 #countdown {
   display: flex;
   justify-content: space-between;
   font-weight: normal !important;
-  font-family: var(--text-font) !important;
+  font-family: var(--header-font) !important;
   color: var(--secondary-color) !important;
   font-weight: 600;
   margin-bottom: 50px;
+  margin-top: 130px;
 }
 
 header .wrapper {
@@ -80,21 +115,23 @@ header .time {
   font-size: 80.8511px;
   line-height: 121px;
   font-weight: 600;
+  padding: -10 !important;
 }
 
 header .label {
   font-size: 32.3404px;
   line-height: 49px;
   font-weight: 600;
+  padding: 0 !important;
 } 
 
 header h2 {
-  font-family: var(--header-font);
+  font-family: 'Optima Bold';
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 80px;
-  margin-bottom: 38px;
+  margin-bottom: 49px;
 }
 
 header h2 + p {
@@ -104,7 +141,7 @@ header h2 + p {
   font-size: 35px;
   line-height: 52px;
   text-align: center;
-  margin-bottom: 51px;
+  margin-bottom: 61px;
 }
 
 .header-input {
@@ -199,8 +236,8 @@ header h2 + p {
 }
 
 .main-section h2 {
-  margin-bottom: 126px;
-  font-family: var(--header-font);
+  margin-bottom: 158px;
+  font-family: "Optima Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -218,42 +255,111 @@ header h2 + p {
 }
 
 
-.icon-1 {
+
+
+.step-1-container {
+  position: relative;
+  font-family: var(--text-font);
+  margin-bottom: 344px;
+}
+
+.icon-one {
   width: 45px !important;
   height: 45px !important;
   border-radius: 5px !important;
-  margin-bottom: 42px;
+  margin-bottom: 49px;
+  margin-top: 151px;
 }
 
-.first-image-container {
-  min-height: 1121px;
-  position: relative;
+.step-1-container h3 {
+  margin-bottom: 36px;
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
 }
 
-.lighthouse-img {
-  width: 1200px;
+.step-1-container h3 + p {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  font-style: normal;
+}
+
+
+
+
+.first-underlay {
+  background-color: var(--primary-color);
+  position: absolute;
+  height: 740px;
+  top: 100px;
+  left: 0;
+  right: 0;
   max-width: 100%;
-  height: 1005px;
-  margin-bottom: 29px;
+  z-index: -999;
 }
+
+
 
 .icon-2 {
   width: 56px !important;
   height: 56px !important; 
   border-radius: 5px !important;
+  bottom: -50px;
+  left: 140px;
 }
 
-.first-underlay {
-  background-color: var(--primary-color);
-  position: absolute;
-  height: 902px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: -999;
+
+/* ****second image area*** */
+
+.step-2-container {
+  font-family: var(--text-font);
+  margin-bottom: 278px;
 }
 
+.step-2-container h3 {
+  margin-bottom: 36px;
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.step-2-container h3 + p {
+  color: var(--grey-color);
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  font-style: normal;
+}
+
+/* ****second image area*** */
+
+.step-3-container {
+  font-family: var(--text-font);
+  margin-bottom: 182px;
+}
+
+.step-3-container h3 {
+  margin-bottom: 36px;
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.step-3-container h3 + p {
+  color: var(--grey-color);
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  font-style: normal;
+}
 
 .step-2 {
   height: 1119px;
@@ -266,7 +372,7 @@ header h2 + p {
 
 .step2-img  {
   width: 1042px !important;
-  min-height: 900px !important;
+  min-height: 700px !important;
   max-width: 100%;
 }
 

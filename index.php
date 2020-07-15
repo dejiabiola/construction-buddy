@@ -15,9 +15,9 @@
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="./assets/css/custom.css">
    <style>
-     /* * {
+     * {
        outline: 1px solid red;
-     } */
+     }
 
     </style>
   </head>
@@ -37,7 +37,7 @@
       
 
       <h2>Coming Soon!</h2>
-      <p class="col-md-8 mx-auto">Be the first to know when our site is up and running</p>
+      <p class="col-md-6 px-lg-5 mx-auto">Be the first to know when our site is up and running</p>
       <!-- form that submits to the email to the backend and database -->
       <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
         <div class="mx-auto d-flex justify-content-center">
@@ -62,13 +62,59 @@
 
   <main class="main-section">
     <div class="container-fluid">
-      <div class="d-flex flex-column align-items-center main-top">
-        <h2 class="text-center col-lg-6 col-md-9">Here's a quick breakdown of how it works</h2>
-        <ion-icon src="./assets/images/icon.svg" class="icon-1 text-center"></ion-icon>
-        <p class="text-center">Fill in the required details for your desired property</p>
+      <h2 class="text-center col-lg-6 col-md-9 mx-auto">Here's a quick breakdown of how it works</h2>
+      <!-- First image container -->
+      <div class="row step-1-container text-white pl-lg-5">
+        <div class="first-underlay"></div>
+        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4">
+          <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
+          <h3 class="pl-lg-5">Clearly defined prompts</h3>
+          <p class="pl-lg-5">
+            All you need to do is provide information about the property you want to build and leave the 
+            rest to our artificial intelligence powered algoritm.
+            Our clearly defined prompts, help make this step easier
+          </p>
+        </div>
+        <div class="col-lg-7 first-image-container">
+          <img class="img-responsive step2-img text-center" src="./assets/images/step1.svg" alt="preview image of the website">
+          <ion-icon src="./assets/images/icon2.svg" class="icon-2 ml-lg-5 pl-lg-5"></ion-icon>
+        </div>
+      </div>
+
+      <!-- second image container  -->
+      <div class="row step-2-container pr-lg-5">
+        <div class="col-lg-7 first-image-container">
+          <img class="img-responsive step2-img text-center" src="./assets/images/step2.svg" alt="preview image of the website">
+        </div>
+        <div class="col-lg-5 first-text-container">
+          <ion-icon src="./assets/images/icon 3.svg" class="icon-one pr-lg-5"></ion-icon>
+          <h3 class="pr-lg-5">Well detailed summary</h3>
+          <p class="pr-lg-5 mr-lg-5">
+          Afterwards, a well detailed summary of all materials needed is generated to suit the information you provided
+          </p>
+        </div>
+      </div>
+
+      <!-- Third image container -->
+      <div class="row step-3-container pl-lg-5">
+        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4">
+          <ion-icon src="./assets/images/icon 4.svg" class="icon-one pl-lg-5"></ion-icon>
+          <h3 class="pl-lg-5">Available for you in real time</h3>
+          <p class="pl-lg-5">
+            The summary provided can be downloaded as a CSV file or printed directly from the system. 
+            All downloads are encrypted and must comply with our terms and conditions
+          </p>
+        </div>
+        <div class="col-lg-7 first-image-container">
+          <img class="img-responsive step2-img text-center" src="./assets/images/step3.svg" alt="preview image of the website">
+        </div>
       </div>
     </div>
-    <div class="container-fluid step-3">
+
+
+
+
+    <!-- <div class="container-fluid step-3">
       <div class="d-flex flex-column flex-lg-row align-items-center
        justify-content-center justify-content-lg-around"> 
         <div class="text-center text-lg-left col-lg-5">
@@ -87,7 +133,6 @@
     <div class="first-image-container d-flex flex-column align-items-center">
       <img class="step2-img" src="./assets/images/step1.svg" alt="preview image of the website">
       <ion-icon src="./assets/images/icon2.svg" class="icon-2"></ion-icon>
-      <div class="first-underlay"></div>
     </div>
     <div class="container-fluid step-2">
       <div class="d-flex flex-column flex-lg-row align-items-center
@@ -122,9 +167,9 @@
           <img class="img-responsive step2-img text-center" src="./assets/images/step3.svg" alt="preview image of the website">
         </div>
       </div>
-    </div>
+    </div> -->
   </main>
-  <footer class="text-center">
+  <!-- <footer class="text-center">
     <h3>Be the first to know about us</h3>
     <p>Subscribe to our newsletter to stay informed</p>
     <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
@@ -134,7 +179,7 @@
           <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
         </div>
       </form>
-  </footer>
+  </footer> -->
 
 
 
