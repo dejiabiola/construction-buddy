@@ -151,7 +151,7 @@ header h2 + p {
   padding-left: 16px;
   display: flex;
   align-items: center;
-  padding-top: 14px;
+  padding-top: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -235,23 +235,77 @@ header h2 + p {
   padding-bottom: 126px;
 }
 
-.main-section h2 {
+ .breakdown-heading {
   margin-bottom: 158px;
-  font-family: "Optima Bold";
+  font-family: "Optima";
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 67px;
+  font-size: 40px;
+  line-height: 46px;
   color: var(--primary-color);
 }
 
-.main-section h2 ~ p {
+.story-header {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  color: var(--primary-color);
+  margin-bottom: 22px;
+}
+
+.story-header + p {
   font-family: var(--text-font);
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 37px;
+  color: var(--grey-color);
+  margin-bottom: 77px;
+}
+
+.story-icon {
+  width: 54px !important;
+  height: 54px !important;
+}
+
+.story-section {
+  margin-bottom: 157px;
+}
+
+.story-section h4 {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
   color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.story-icon-wrapper {
+  margin-bottom: 33px;
+}
+
+
+
+.story-bullets p {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 25px;
+  color: var(--grey-color)
+}
+
+
+@media (min-width: 1441px) {
+  .story-bullets, .story-header + p {
+    max-width: 1440px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 
@@ -418,7 +472,7 @@ header h2 + p {
 
 /* ***preview section*** */
 .preview-section {
-  margin-bottom: 262px;
+  margin-bottom: 143px;
   background-color: var(--secondary-color);
 }
 
@@ -445,30 +499,19 @@ footer {
   z-index: 1000;
 }
 
-.footer-overlay {
-  background-color: var(--primary-color);
-  position: absolute;
-  height: 500px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: -999;
-}
-
 footer h3 {
   font-family: var(--header-font);
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 53px;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--primary-color);
   margin-bottom: 24px;
 }
 
 footer p {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Poppins;
+  color: var(--primary-color);
+  font-family: var(--text-font);
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -503,10 +546,39 @@ footer .header-button {
   z-index: 99999;
 }
 
-.darkmode--activated h3, .darkmode--activated h2 {
+.darkmode--activated h3, .darkmode--activated h2, .darkmode--activated h4 {
   color: var(--secondary-color);
 }
 
 .darkmode--activated .stupid {
   color: var(--primary-color);
+}
+
+.darkmode--activated .story-header + p, .darkmode--activated .story-bullets p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.darkmode--activated .story-icon {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.darkmode--activated footer p {
+  color: var(--secondary-color);
+}
+
+.darkmode--activated .first-underlay, .darkmode--activated .second-underlay {
+  background-color: #2E2E2E !important;
+}
+
+
+
+
+
+/* *** general alignement for super large screens *** */
+@media (min-width: 1441px) {
+  .row {
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }

@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Construction Buddy | AI powered construction material estimating tool</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -53,11 +53,7 @@
       <?php
         if(isset($_SESSION["error"])){
             $error = $_SESSION["error"];
-            echo "<p class='text-center mt-1 bg-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
-        }
-        if(isset($_SESSION["success"])){
-            $success = $_SESSION["success"];
-            echo "<p class='text-center mt-1 bg-success p-3 text-white col-md-8 mx-auto'>$success</p>";
+            echo "<p class='text-center mt-1 text-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
         }
       ?>  
     </div>
@@ -66,27 +62,69 @@
 
   <main class="main-section">
     <div class="container-fluid">
-      <h2 class="text-center col-lg-6 col-md-9 mx-auto">Here's a quick breakdown of how it works</h2>
-      <!-- First image container -->
-      <div class="row step-1-container text-white pl-lg-5">
-        <div class="first-underlay"></div>
-        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4">
-          <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
-          <h3 class="pl-lg-4">Clearly defined prompts</h3>
-          <p class="pl-lg-4">
-            All you need to do is provide information about the property you want to build and leave the 
-            rest to our artificial intelligence powered algoritm.
-            Our clearly defined prompts, help make this step easier
-          </p>
-        </div>
-        <div class="col-lg-7 first-image-container">
-          <img class="img-responsive step2-img text-center" src="./assets/images/step1.svg" alt="preview image of the website">
-          <ion-icon src="./assets/images/icon2.svg" class="icon-2 ml-lg-5 pl-lg-5"></ion-icon>
+      <!-- Our Story section -->
+      <div class="story-section">
+        <h2 class="text-center story-header stupid">Our Story</h2>
+        <p class="text-center col-lg-8 mx-auto">Construction buddy helps engineers, realtors and individuals carry out evaluation of building materials. 
+          Our evaluations are powered by a combination of the experience of several expert engineers and quantity surveyors
+          and our powerful artifial intelligence technology.
+          This solution is out to curb the hassle that comes with evaluation and is a promising measure to save cost of operation
+        </p>
+        <div class="row mx-md-5 px-md-5 story-bullets">
+          <div class="col-md-4">
+            <div class="d-flex align-items-end story-icon-wrapper">
+              <ion-icon src="./assets/images/easy.svg" class="mr-5 story-icon"></ion-icon>
+              <h4>Easy to use</h4>
+            </div>
+            <p>Break myths and impossibilities with our easy to use user interface</p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-end story-icon-wrapper">
+              <ion-icon src="./assets/images/easy.svg" class="mr-5 story-icon"></ion-icon>
+              <h4>Realistic Values</h4>
+            </div>
+            <p>Our BOQ are all evaluated by reputable engineers and quantitu surveyors</p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-end story-icon-wrapper">
+              <ion-icon src="./assets/images/portable.svg" class="mr-5 story-icon"></ion-icon>
+              <h4>Portable Results</h4>
+            </div>
+            <p>Get available data in real time and on the go</p>
+          </div>
         </div>
       </div>
+    </div>
+
+
+
+    <div class="container-fluid px-0">
+      <h2 class="text-center col-lg-6 col-md-9 mx-auto breakdown-heading">Here's a quick breakdown of how it works</h2>
+      <!-- First image container -->
+      <div class="step-1-container">
+        <div class="first-underlay"></div>
+        <div class="row text-white pl-lg-5">
+          <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4">
+            <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
+            <h3 class="pl-lg-5">Clearly defined prompts</h3>
+            <p class="pl-lg-5">
+              All you need to do is provide information about the property you want to build and leave the 
+              rest to our artificial intelligence powered algoritm.
+              Our clearly defined prompts, help make this step easier
+            </p>
+          </div>
+          <div class="col-lg-7 first-image-container">
+            <img class="img-responsive step2-img text-center" src="./assets/images/step1.svg" alt="preview image of the website">
+            <ion-icon src="./assets/images/icon2.svg" class="icon-2 ml-lg-5 pl-lg-5"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="container-fluid">
 
       <!-- second image container  -->
-      <div class="row step-2-container pr-lg-5">
+      <div class="row step-2-container pr-lg-5 mx-n2">
         <div class="col-lg-7 first-image-container">
           <img class="img-responsive step2-img text-center" src="./assets/images/step2.svg" alt="preview image of the website">
         </div>
@@ -128,7 +166,7 @@
     </div>
     <div class="preview-section">
       <div class="container-fluid">
-        <h2 class="text-center">Pages preview</h2>
+        <h2 class="text-center stupid">Pages preview</h2>
         <div class="row justify-content-around preview-top popup-gallery magnify">
           <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Landing Page">
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
@@ -154,8 +192,7 @@
       </div>
     </div>
   </main>
-  <footer class="text-center text-white">
-    <div class="footer-overlay"></div>
+  <footer class="text-center">
     <h3>Be the first to know when we launch</h3>
     <p>Subscribe to our newsletter to stay informed</p>
     <form class="form-group mt-4 mx-auto mb-0" method="POST" action="submit.php">
@@ -207,9 +244,5 @@
     if(isset($_SESSION["error"])){
       unset($_SESSION["error"]);
       
-    }
-
-    if(isset($_SESSION["success"])){
-      unset($_SESSION["success"]);
     }
 ?>  
