@@ -248,6 +248,50 @@ header h2 + p {
   }
 }
 
+@media (max-width: 767px) {
+  header .time {
+    font-size: 3.6rem;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+
+  header .label {
+    font-size: 1.8rem;
+    line-height: 9px;
+  }
+
+  header h2 {
+    font-size: 2rem;
+    line-height: 21px;
+  }
+
+  header h2 + p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header-input {
+    width: 303.31px;
+    height: 31px;
+    padding-bottom: 10px;
+    display: flex;
+    font-size: 8px;
+  }
+
+  ::placeholder {
+    font-size: 7.98969px;
+    line-height: 10px;
+  }
+
+  .header-button {
+    width: 137.66px;
+    height: 31px;
+    font-size: 8.94845px;
+    line-height: 11px;
+  }
+
+}
+
 @media (max-width: 540px) {
   header {
     display: flex !important;
@@ -314,6 +358,9 @@ header h2 + p {
   }
 
 }
+
+
+
 
 
 /* *** Main Section *** */
@@ -497,6 +544,14 @@ header h2 + p {
   left: 140px;
 }
 
+@media (max-width: 990px) {
+  .icon-2 {
+    position: static !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 769px) {
   .breakdown-heading {
     margin-bottom: 59px;
@@ -515,11 +570,11 @@ header h2 + p {
   .step2-img {
     height: 300px !important;
   }
+}
 
-  .icon-2 {
-    position: static !important;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 960px) {
+  .step-1-container {
+    margin-bottom: 50px;
   }
 }
 
@@ -566,7 +621,7 @@ header h2 + p {
   font-style: normal;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 960px) {
   .step-2-container {
     margin-bottom: 26.47px;
   }
@@ -610,7 +665,7 @@ header h2 + p {
   font-style: normal;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 960px) {
   .step-3-container {
     margin-bottom: 100px;
   }
@@ -682,12 +737,23 @@ header h2 + p {
 
 }
 
-
-/* @media (max-width: 769px) {
+@media (max-width: 1025px) {
   .dashboard-img {
-    height: 300px;
+    height: 760px;
   }
-} */
+
+  .second-underlay {
+    height: 700px;
+  
+  }
+}
+
+
+@media (max-width: 960px) {
+  .dashboard-img {
+    height: 700px;
+  }
+}
 
 @media (max-width: 540px) {
   .dashboard-container h3 {
@@ -748,7 +814,7 @@ header h2 + p {
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 960px) {
   .preview-section {
     margin-bottom: 113px;
   }

@@ -19,9 +19,9 @@
    <!-- Custom css -->
    <link rel="stylesheet" href="./assets/css/custom.css">
    <style>
-     * {
+     /* * {
        outline: 1px solid red;
-     }
+     } */
 
     </style>
   </head>
@@ -41,7 +41,7 @@
       
 
       <h2>Construction Buddy is Coming Soon!</h2>
-      <p class="col-md-6 px-lg-5 mx-auto">Be the first to know when our site is up and running</p>
+      <p class="col-md-9 col-lg-6 px-lg-5 mx-auto">Be the first to know when our site is up and running</p>
       <!-- form that submits to the email to the backend and database -->
       <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
@@ -71,20 +71,20 @@
           This solution is out to curb the hassle that comes with evaluation and is a promising measure to save cost of operation
         </p>
         <div class="row mx-md-5 px-md-5 story-bullets">
-          <div class="col-md-4 mb-5 mb-md-0">
-            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-end story-icon-wrapper">
-              <svg class="mb-4 mb-md-0 mr-md-5 story-icon" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
+              <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="23" width="31" height="31" fill="#141415" class="change-fill"/>
                 <circle cx="42.5" cy="11.5" r="11.5" fill="#E67109"/>
               </svg>
 
               <h4>Easy to use</h4>
             </div>
-            <p class="text-center text-md-left px-2 px-md-0">Break myths and impossibilities with our easy to use user interface</p>
+            <p class="text-center text-lg-left px-2 px-md-0">Break myths and impossibilities with our easy to use user interface</p>
           </div>
-          <div class="col-md-4 mb-5 mb-md-0 mt-5 mt-md-0">
-            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-end story-icon-wrapper">
-              <svg class="mb-4 mb-md-0 mr-md-5 story-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0">
+            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
+              <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="15.8262" y="6.32666" width="31" height="31" transform="rotate(30 15.8262 6.32666)" fill="#141415" class="change-fill"/>
                 <circle cx="36.5" cy="11.5" r="11.5" fill="#E67109"/>
                 <circle cx="13.5" cy="34.5" r="11.5" fill="#E67109"/>
@@ -92,18 +92,18 @@
 
               <h4>Realistic Values</h4>
             </div>
-            <p class="text-center text-md-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantitu surveyors</p>
+            <p class="text-center text-lg-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantitu surveyors</p>
           </div>
-          <div class="col-md-4 mb-5 mb-md-0 mt-5 mt-md-0">
-            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-end story-icon-wrapper">
-              <svg class="mb-4 mb-md-0 mr-md-5 story-icon" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0">
+            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
+              <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="31" height="31" fill="#141415" class="change-fill"/>
                 <circle cx="24" cy="24" r="10" fill="#E67109"/>
               </svg>
 
               <h4>Portable Results</h4>
             </div>
-            <p class="text-center text-md-left px-2 px-md-0">Get available data in real time and on the go</p>
+            <p class="text-center text-lg-left px-2 px-md-0">Get available data in real time and on the go</p>
           </div>
         </div>
       </div>
@@ -118,16 +118,16 @@
         <div class="first-underlay d-none d-md-block"></div>
         <div class="container-fluid">
           <div class="row text-white pl-lg-5">
-            <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-md-block flex-column align-items-center mb-5 mb-md-0">
+            <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center mb-5 mb-lg-0">
               <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
-              <h3 class="pl-lg-5 text-center text-md-left">Clearly defined prompts</h3>
-              <p class="pl-lg-5 text-center text-md-left">
+              <h3 class="pl-lg-5 text-center text-lg-left">Clearly defined prompts</h3>
+              <p class="pl-lg-5 text-center text-lg-left">
                 All you need to do is provide information about the property you want to build and leave the 
                 rest to our artificial intelligence powered algoritm.
                 Our clearly defined prompts, help make this step easier
               </p>
             </div>
-            <div class="col-lg-7 first-image-container d-flex d-md-block justify-content-center flex-column">
+            <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
               <img class="img-responsive step2-img text-center" src="./assets/images/step1.svg" alt="preview image of the website">
               <ion-icon src="./assets/images/icon2.svg" class="icon-2 ml-lg-5 pl-lg-5"></ion-icon>
             </div>
@@ -139,14 +139,14 @@
     <div class="container-fluid">
 
       <!-- second image container  -->
-      <div class="row step-2-container pr-lg-5 mx-n2">
-        <div class="col-lg-7 first-image-container order-2 order-lg-1">
+      <div class="row step-2-container pr-lg-5">
+        <div class="col-lg-7 first-image-container order-2 order-lg-1 d-flex d-lg-block justify-content-center flex-column">
           <img class="img-responsive step2-img text-center" src="./assets/images/step2.svg" alt="preview image of the website">
         </div>
-        <div class="col-lg-5 first-text-container order-1 order-lg-2 mb-5 mb-lg-0 d-flex d-md-block flex-column align-items-center">
+        <div class="col-lg-5 first-text-container order-1 order-lg-2 mb-5 mb-lg-0 d-flex d-lg-block flex-column align-items-center">
           <ion-icon src="./assets/images/icon 3.svg" class="icon-one pr-lg-5"></ion-icon>
-          <h3 class="pr-lg-5 text-center text-md-left">Well detailed summary</h3>
-          <p class="pr-lg-5 mr-lg-5 text-center text-md-left">
+          <h3 class="pr-lg-5 text-center text-lg-left">Well detailed summary</h3>
+          <p class="pr-lg-5 mr-lg-5 text-center text-lg-left">
           Afterwards, a well detailed summary of all materials needed is generated to suit the information you provided
           </p>
         </div>
@@ -154,15 +154,15 @@
 
       <!-- Third image container -->
       <div class="row step-3-container pl-lg-5">
-        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-md-block flex-column align-items-center">
+        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center">
           <ion-icon src="./assets/images/icon 4.svg" class="icon-one pl-lg-5"></ion-icon>
-          <h3 class="pl-lg-5 text-center text-md-left">Available for you in real time</h3>
-          <p class="pl-lg-5 text-center text-md-left mb-5 mb-lg-0">
+          <h3 class="pl-lg-5 text-center text-lg-left">Available for you in real time</h3>
+          <p class="pl-lg-5 text-center text-lg-left mb-5 mb-lg-0">
             The summary provided can be downloaded as a CSV file or printed directly from the system. 
             All downloads are encrypted and must comply with our terms and conditions
           </p>
         </div>
-        <div class="col-lg-7 first-image-container">
+        <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
           <img class="img-responsive step2-img text-center" src="./assets/images/step3.svg" alt="preview image of the website">
         </div>
       </div>
@@ -174,34 +174,35 @@
         <ion-icon src="./assets/images/dash.svg" class="icon-dash"></ion-icon>
         <h3 class="stupid">Well detailed dashboard</h3>
         <div class="dash-image-wrapper text-center">
-          <div class="second-underlay d-none d-md-block"></div>
+          <div class="second-underlay d-none d-lg-block"></div>
           <img src="./assets/images/dashboard.svg" alt="preview of the site dashboard page" class="dashboard-img">
         </div>
       </div>
     </div>
+
     <div class="preview-section">
       <div class="container-fluid">
         <h2 class="text-center stupid">Pages preview</h2>
         <div class="row justify-content-around preview-top popup-gallery magnify px-3">
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5" title="Landing Page">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Landing Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5" title="Home Page">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Home Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
         <!-- </div>
         <div class="row justify-content-around popup-gallery magnify px-3 mb-5"> -->
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5" title="Dashboard Page">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Dashboard Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
