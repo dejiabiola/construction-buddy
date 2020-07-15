@@ -16,6 +16,11 @@
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- Magnific Popup -->
    <link rel="stylesheet" href="./assets/css/magnific-popup/magnific-popup.min.css">
+   <!-- Animate.css -->
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
    <!-- Custom css -->
    <link rel="stylesheet" href="./assets/css/custom.css">
    <style>
@@ -26,6 +31,12 @@
     </style>
   </head>
   <body>
+
+   <!-- *** Preloader Starts *** -->
+   <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <!-- Preloader End -->
 
   <!-- ***Header Section *** -->
   <header class="banner-section darkmode-ignore">
@@ -64,7 +75,7 @@
     <div class="container-fluid">
       <!-- Our Story section -->
       <div class="story-section">
-        <h2 class="text-center story-header stupid text-uppercase">Our Story</h2>
+        <h2 class="text-center story-header text-uppercase" data-aos="fade-up">Our Story</h2>
         <p class="text-center col-lg-8 px-0 mx-auto">Construction buddy helps engineers, realtors and individuals carry out evaluation of building materials. 
           Our evaluations are powered by a combination of the experience of several expert engineers and quantity surveyors
           and our powerful artifial intelligence technology.
@@ -187,17 +198,18 @@
           <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Landing Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <p class="text-center">Landing Page</p>
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Home Page">
+          <a href="" class="mb-5 mx-2 mx-lg-0" title="Home Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <img src="" alt="preview of website">
+            <p class="text-center">Home Page</p>
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
+          <a href="./assets/images/dashboard.svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <img src="./assets/images/dashboard.svg" alt="preview of website">
+            <p class="text-center">Dashboard</p>
           </a>
-        <!-- </div>
-        <div class="row justify-content-around popup-gallery magnify px-3 mb-5"> -->
           <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
