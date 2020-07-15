@@ -157,7 +157,7 @@ header h2 + p {
   font-size: 28px;
   line-height: 42px;
   color: var(--primary-color);
- 
+  border-radius: 5px 0px 0px 5px !important;
 }
 
 /* .header-button:after {
