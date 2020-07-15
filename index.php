@@ -80,11 +80,11 @@
 
               <h4>Easy to use</h4>
             </div>
-            <p class="text-center text-md-left">Break myths and impossibilities with our easy to use user interface</p>
+            <p class="text-center text-md-left px-2 px-md-0">Break myths and impossibilities with our easy to use user interface</p>
           </div>
-          <div class="col-md-4 mb-5 mb-md-0">
+          <div class="col-md-4 mb-5 mb-md-0 mt-5 mt-md-0">
             <div class="d-flex flex-column flex-md-row align-items-center align-items-md-end story-icon-wrapper">
-              <svg class="mr-5 story-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="mb-4 mb-md-0 mr-md-5 story-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="15.8262" y="6.32666" width="31" height="31" transform="rotate(30 15.8262 6.32666)" fill="#141415" class="change-fill"/>
                 <circle cx="36.5" cy="11.5" r="11.5" fill="#E67109"/>
                 <circle cx="13.5" cy="34.5" r="11.5" fill="#E67109"/>
@@ -92,18 +92,18 @@
 
               <h4>Realistic Values</h4>
             </div>
-            <p class="text-center text-md-left">Our BOQ are all evaluated by reputable engineers and quantitu surveyors</p>
+            <p class="text-center text-md-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantitu surveyors</p>
           </div>
-          <div class="col-md-4 mb-5 mb-md-0">
+          <div class="col-md-4 mb-5 mb-md-0 mt-5 mt-md-0">
             <div class="d-flex flex-column flex-md-row align-items-center align-items-md-end story-icon-wrapper">
-              <svg class="mr-5 story-icon" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="mb-4 mb-md-0 mr-md-5 story-icon" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="31" height="31" fill="#141415" class="change-fill"/>
                 <circle cx="24" cy="24" r="10" fill="#E67109"/>
               </svg>
 
               <h4>Portable Results</h4>
             </div>
-            <p class="text-center text-md-left">Get available data in real time and on the go</p>
+            <p class="text-center text-md-left px-2 px-md-0">Get available data in real time and on the go</p>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
 
 
     <div class="container-fluid px-0">
-      <h2 class="text-center col-lg-6 col-md-9 mx-auto breakdown-heading">Here's a quick breakdown of how it works</h2>
+      <h2 class="text-center col-lg-6 col-md-9 mx-auto px-5 breakdown-heading">Here's a quick breakdown of how it works</h2>
       <!-- First image container -->
       <div class="step-1-container">
         <div class="first-underlay d-none d-md-block"></div>
@@ -182,25 +182,31 @@
     <div class="preview-section">
       <div class="container-fluid">
         <h2 class="text-center stupid">Pages preview</h2>
-        <div class="row justify-content-around preview-top popup-gallery magnify">
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mb-md-0" title="Landing Page">
+        <div class="row justify-content-around preview-top popup-gallery magnify px-3">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5" title="Landing Page">
+            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mb-md-0" title="Home Page">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5" title="Home Page">
+            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5">
+            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+        <!-- </div>
+        <div class="row justify-content-around popup-gallery magnify px-3 mb-5"> -->
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5">
+            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5" title="Dashboard Page">
+            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
           <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page">
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
-          </a>
-        </div>
-        <div class="row justify-content-around popup-gallery magnify" class="mb-5 mb-md-0" title="Dashboard Page">
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png">
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mb-md-0" alt="preview of website">
-          </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mb-md-0" title="Dashboard Page">
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
-          </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page">
+            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
         </div>
