@@ -12,19 +12,23 @@
 
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- Animate on scroll -->
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- Magnific Popup -->
+   <link rel="stylesheet" href="./assets/css/magnific-popup/magnific-popup.min.css">
+   <!-- Custom css -->
    <link rel="stylesheet" href="./assets/css/custom.css">
    <style>
-     * {
+     /* * {
        outline: 1px solid red;
-     }
+     } */
 
     </style>
   </head>
   <body>
 
   <!-- ***Header Section *** -->
-  <header class="banner-section">
+  <header class="banner-section darkmode-ignore">
     <div class="container-fluid text-center text-white">
       <div class="coming-soon-plaster">
         <p>Coming Soon</p>
@@ -36,7 +40,7 @@
       </div>
       
 
-      <h2>Coming Soon!</h2>
+      <h2>Construction Buddy is Coming Soon!</h2>
       <p class="col-md-6 px-lg-5 mx-auto">Be the first to know when our site is up and running</p>
       <!-- form that submits to the email to the backend and database -->
       <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
@@ -68,8 +72,8 @@
         <div class="first-underlay"></div>
         <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4">
           <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
-          <h3 class="pl-lg-5">Clearly defined prompts</h3>
-          <p class="pl-lg-5">
+          <h3 class="pl-lg-4">Clearly defined prompts</h3>
+          <p class="pl-lg-4">
             All you need to do is provide information about the property you want to build and leave the 
             rest to our artificial intelligence powered algoritm.
             Our clearly defined prompts, help make this step easier
@@ -111,75 +115,57 @@
       </div>
     </div>
 
-
-
-
-    <!-- <div class="container-fluid step-3">
-      <div class="d-flex flex-column flex-lg-row align-items-center
-       justify-content-center justify-content-lg-around"> 
-        <div class="text-center text-lg-left col-lg-5">
-          <ion-icon src="./assets/images/icon 3.svg" class="icon-3"></ion-icon>
-          <h3>Available for you in real time</h3>
-          <p>
-            The summary provided can be downloaded as a CSV file or printed directly from the system.
-            All downloads are encrypted nd must comply with out terms and conditions.
-          </p>
-        </div>
-        <div class="mx-auto text-center">
-          <img class="img-responsive step2-img text-center" src="./assets/images/step3.svg" alt="preview image of the website">
+    <div class="container-fluid px-0">
+      <!-- dashboard-image-container -->
+      <div class="dashboard-container text-center">
+        <ion-icon src="./assets/images/icon2.svg" class="icon-dash"></ion-icon>
+        <h3 class="stupid">Well detailed dashboard</h3>
+        <div class="dash-image-wrapper text-center">
+          <div class="second-underlay"></div>
+          <img src="./assets/images/dashboard.svg" alt="preview of the site dashboard page" class="dashboard-img">
         </div>
       </div>
     </div>
-    <div class="first-image-container d-flex flex-column align-items-center">
-      <img class="step2-img" src="./assets/images/step1.svg" alt="preview image of the website">
-      <ion-icon src="./assets/images/icon2.svg" class="icon-2"></ion-icon>
-    </div>
-    <div class="container-fluid step-2">
-      <div class="d-flex flex-column flex-lg-row align-items-center
-       justify-content-center justify-content-lg-around">
-       <div class="mx-auto text-center">
-        <img class="img-responsive step2-img text-center" src="./assets/images/step2.svg" alt="preview image of the website">
-       </div>
-        <div class="mx-auto text-center text-lg-left">
-          <ion-icon src="./assets/images/icon 3.svg" class="icon-3"></ion-icon>
-          <h3>Well detailed summary</h3>
-          <p>
-            Afterwards, a well detailed summary of all materials needed is generated to suit the information
-            you provided.
-          </p>
+    <div class="preview-section">
+      <div class="container-fluid">
+        <h2 class="text-center">Pages preview</h2>
+        <div class="row justify-content-around preview-top popup-gallery magnify">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Landing Page">
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Home Page">
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page">
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+        </div>
+        <div class="row justify-content-around popup-gallery magnify" title="Dashboard Page">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png">
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page">
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page">
+            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+          </a>
         </div>
       </div>
     </div>
-    <div class="container-fluid step-3">
-      <div class="d-flex flex-column flex-lg-row align-items-center
-       justify-content-center justify-content-lg-around"> 
-        <div class="text-center text-lg-left col-lg-5">
-          <div class="col-lg-8">
-            <ion-icon src="./assets/images/icon 3.svg" class="icon-3"></ion-icon>
-            <h3>Available for you in real time</h3>
-            <p>
-              The summary provided can be downloaded as a CSV file or printed directly from the system.
-              All downloads are encrypted nd must comply with out terms and conditions.
-            </p>
-            </div>
-        </div>
-        <div class="mx-auto text-center">
-          <img class="img-responsive step2-img text-center" src="./assets/images/step3.svg" alt="preview image of the website">
-        </div>
-      </div>
-    </div> -->
   </main>
-  <!-- <footer class="text-center">
-    <h3>Be the first to know about us</h3>
+  <footer class="text-center text-white">
+    <div class="footer-overlay"></div>
+    <h3>Be the first to know when we launch</h3>
     <p>Subscribe to our newsletter to stay informed</p>
-    <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
+    <form class="form-group mt-4 mx-auto mb-0" method="POST" action="submit.php">
         <div class="mx-auto d-flex justify-content-center">
           <input type="email"
             class="form-control mb-3 header-input rounded-0" name="email" id="email" placeholder="Enter a valid email address">
           <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
         </div>
       </form>
-  </footer> -->
+  </footer>
 
 
 
@@ -191,7 +177,7 @@
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- gsap -->
@@ -202,6 +188,10 @@
     <script src="./assets/js/countdown-clock/countdown.jquery.js"></script>
     <!-- ionicons -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- magnific pop-up -->
+    <script src="./assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- DArkMode.js -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
     <!-- custom css -->
     <script src="./assets/js/custom.js"></script>
   </body>
