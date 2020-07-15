@@ -76,6 +76,13 @@ var options = {
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
 
+$('.darkmode-toggle').on('click', () => {
+  if (darkmode.isActivated()) {
+    $(".change-fill").css("fill", "#232323");
+  }
+})
+
+
 
 
   
