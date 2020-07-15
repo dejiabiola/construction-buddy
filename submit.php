@@ -8,11 +8,7 @@
   $db_password = "16ba5ecd";
   $db_tablename = "submissions";
 
-  // $db_host = 'localhost';
-  // $db_name = 'id14333629_deji';
-  // $db_user = "id14333629_deji_ab"
-  // $db_password = "l-79Xg/>sqeV8VZ]";
-  // $db_tablename = "submissions";
+
 
 
   // Connect to the sql database
