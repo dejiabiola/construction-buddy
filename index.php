@@ -187,7 +187,7 @@
         <h3 class="stupid">Well detailed dashboard</h3>
         <div class="dash-image-wrapper text-center">
           <div class="second-underlay d-none d-lg-block"></div>
-          <img src="./assets/images/dashboard.svg" alt="preview of the site dashboard page" class="dashboard-img">
+          <img src="./assets/images/Dashboard (2).svg" alt="preview of the site dashboard page" class="dashboard-img">
         </div>
       </div>
     </div>
@@ -201,27 +201,30 @@
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
             <p class="text-center">Landing Page</p>
           </a>
-          <a href="" class="mb-5 mx-2 mx-lg-0" title="Home Page">
+          <a href="./assets/images/Home-CB.svg" class="mb-5 mx-2 mx-lg-0" title="Home Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
-            <img src="" alt="preview of website">
+            <img src="./assets/images/Home-CB.svg" alt="preview of website">
             <p class="text-center">Home Page</p>
           </a>
-          <a href="./assets/images/dashboard.svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
+          <a href="./assets/images/Dashboard (2).svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
-            <img src="./assets/images/dashboard.svg" alt="preview of website">
+            <img src="./assets/images/Dashboard (2).svg" alt="preview of website">
             <p class="text-center">Dashboard</p>
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Canvas" class="mb-5 mx-2 mx-lg-0">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <p class="text-center">Canvas</p>
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Dashboard Page">
+          <a href="./assets/images/Evaluation request.svg" class="mb-5 mx-2 mx-lg-0" title="Form Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <img src="./assets/images/Evaluation request.svg" alt="preview of website">
+            <p class="text-center">Form Page</p>
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Dashboard Page">
+          <a href="./assets/images/Evaluation request-2.svg" title="Result Page">
             <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <img src="./assets/images/Evaluation request-2.svg" alt="preview of website">
+            <p class="text-center">Result Page</p>
           </a>
         </div>
       </div>

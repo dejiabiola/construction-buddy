@@ -1,8 +1,8 @@
 
 // logic for the preloader
 $(window).on('load', function () {
-  $('#status').delay(500).fadeOut()
-  $('#preloader').delay(1000).fadeOut()
+  $('#status').delay(300).fadeOut()
+  $('#preloader').delay(600).fadeOut()
   $('#countdown').delay(1000).addClass('animate__animated animate__bounce')
 })
 
