@@ -53,14 +53,14 @@
       </div>
       
 
-      <h2>Construction Buddy is Coming Soon!</h2>
-      <p class="col-md-9 col-lg-6 px-lg-5 mx-auto">Be the first to know when our site is up and running</p>
+      <h2 class="anim-hero">Construction Buddy is Coming Soon!</h2>
+      <p class="col-md-9 col-lg-6 px-lg-5 mx-auto anim-hero">Be the first to know when our site is up and running</p>
       <!-- form that submits to the email to the backend and database -->
       
-      <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
+      <form class="form-group mt-4 mx-auto anim-hero" method="POST" action="submit.php">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
-            class="form-control mb-2 header-input rounded-0 text-center" name="email" id="email" placeholder="Enter a valid email address">
+            class="form-control mb-2 header-input rounded-0 text-center text-md-left" name="email" id="email" placeholder="Enter a valid email address">
           <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
         </div>
         <?php
@@ -78,14 +78,14 @@
     <div class="container-fluid">
       <!-- Our Story section -->
       <div class="story-section">
-        <h2 class="text-center story-header text-uppercase" data-aos="fade-up">Our Story</h2>
-        <p class="text-center col-lg-8 px-0 mx-auto">Construction buddy helps engineers, realtors and individuals carry out evaluation of building materials. 
+        <h2 class="text-center story-header text-uppercase" data-aos="fade-in">Our Story</h2>
+        <p class="text-center col-lg-8 px-0 mx-auto" data-aos="fade-up">Construction buddy helps engineers, realtors and individuals carry out evaluation of building materials. 
           Our evaluations are powered by a combination of the experience of several expert engineers and quantity surveyors
           and our powerful artifial intelligence technology.
           This solution is out to curb the hassle that comes with evaluation and is a promising measure to save cost of operation
         </p>
         <div class="row mx-md-5 px-md-5 story-bullets">
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="23" width="31" height="31" fill="#141415" class="change-fill"/>
@@ -96,7 +96,7 @@
             </div>
             <p class="text-center text-lg-left px-2 px-md-0">Break myths and impossibilities with our easy to use user interface</p>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="15.8262" y="6.32666" width="31" height="31" transform="rotate(30 15.8262 6.32666)" fill="#141415" class="change-fill"/>
@@ -108,7 +108,7 @@
             </div>
             <p class="text-center text-lg-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantitu surveyors</p>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="31" height="31" fill="#141415" class="change-fill"/>
@@ -126,13 +126,16 @@
 
 
     <div class="container-fluid px-0">
-      <h2 class="text-center col-lg-6 col-md-9 mx-auto px-5 breakdown-heading">Here's a Quick Breakdown of Fow it Works</h2>
+      <h2 class="text-center col-lg-6 col-md-9 mx-auto px-5 breakdown-heading" data-aos="fade-in">
+        Here's a Quick Breakdown of Fow it Works
+      </h2>
       <!-- First image container -->
       <div class="step-1-container">
         <div class="first-underlay d-none d-md-block"></div>
         <div class="container-fluid">
           <div class="row text-white pl-lg-5">
-            <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center mb-5 mb-lg-0">
+            <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex 
+              d-lg-block flex-column align-items-center mb-5 mb-lg-0" >
               <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
               <h3 class="pl-lg-5 text-center text-lg-left">Submit a Request</h3>
               <p class="pl-lg-5 text-center text-lg-left">
@@ -303,6 +306,24 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <!-- custom css -->
     <script src="./assets/js/custom.js"></script>
+    <script>
+
+        // gsap.from('.container', {
+        //   opacity: 1, 
+        //   duration: 1, 
+        //   y: 150, 
+        // })
+
+        // gsap.from('.container', {
+        //   opacity: 1, 
+        //   duration: 1, 
+        //   y: 150, 
+        // })
+
+
+
+
+    </script>
   </body>
 </html>
 

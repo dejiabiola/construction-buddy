@@ -1,22 +1,25 @@
 
-// logic for the preloader
+// Animate on scroll logic
+AOS.init({
+  once: true,
+  easing: 'ease-in',
+  offset: 70,
+  duration: 700,
+});
+
+// logic for the preloader and animate hero section
 $(window).on('load', function () {
   $('#status').delay(300).fadeOut()
   $('#preloader').delay(600).fadeOut()
-  $('#countdown').delay(1000).addClass('animate__animated animate__bounce')
+  // $('#countdown').addClass('animate__animated animate__bounce')
+  gsap.from('.anim-hero', {opacity: 0, duration: 1, y: 60, stagger: 0.4});
 })
 
 
 //scroll trigger
 
 
-// Animate on scroll logic
-AOS.init({
-  once: true,
-  easing: 'ease-in-out',
-  offset: 160,
-  duration: 600,
-});
+
 
 
 // countdown-clock
@@ -88,46 +91,7 @@ $('.darkmode-toggle').on('click', () => {
 })
 
 
-// $('.fade').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 500,
-//   fade: true,
-//   cssEase: 'linear'
-// });
 
-
-if ($('.error-message')) {
-  console.log('true')
-}
-
-// $('.responsive').slick();
-
-// $('.responsive').slick({
-//   centerMode: true,
-//   centerPadding: '60px',
-//   slidesToShow: 3,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 1
-//       }
-//     }
-//   ]
-// });
 
   
 
