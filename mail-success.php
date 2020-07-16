@@ -15,7 +15,7 @@
   </head>
   <body>
     <h1>Your email is definitely in the db but this page is just not up yet 😄</h1>
-    <p>There is also no link to prev page yet so please use the back button that the browser provides</p>
+    <button type="button" onclick="history.go(-1);">Back</button>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -24,3 +24,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+<?php 
+
+?>

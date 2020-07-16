@@ -1,12 +1,14 @@
 <?php
   session_start();
 
+  // Config for 000webhost database
   // $db_host = 'localhost';
   // $db_name = 'id14333629_deji';
   // $db_user = "id14333629_deji_ab";
   // $db_password = "l-79Xg/>sqeV8VZ]";
   // $db_tablename = "submissions";
 
+  // Config for heroku clearDB database
   $db_host = 'us-cdbr-east-02.cleardb.com';
   $db_name = 'heroku_ba9cfc94fc33b61';
   $db_user = "be8d539458d8fb";
@@ -60,7 +62,7 @@
         exit;
         die();
       } else {
-        $_SESSION["error"] = "An error occured, try again";
+        $_SESSION["error"] = "An error occured, please contact support";
         header("Location:index.php");
         exit;
         die();

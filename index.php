@@ -54,19 +54,20 @@
       <h2>Construction Buddy is Coming Soon!</h2>
       <p class="col-md-9 col-lg-6 px-lg-5 mx-auto">Be the first to know when our site is up and running</p>
       <!-- form that submits to the email to the backend and database -->
+      
       <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
             class="form-control mb-2 header-input rounded-0 text-center" name="email" id="email" placeholder="Enter a valid email address">
           <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
         </div>
-      </form>
-      <?php
+        <?php
         if(isset($_SESSION["error"])){
             $error = $_SESSION["error"];
-            echo "<p class='text-center mt-1 text-danger p-3 text-white col-md-8 mx-auto'>$error</p>";
+            echo "<div class='text-center alert alert-danger p-1 col-md-5 mx-auto mt-2 mt-md-0' role='alert'>$error</div>";
         }
       ?>  
+      </form>
     </div>
   </header>
 
@@ -235,6 +236,12 @@
             class="form-control mb-2 header-input rounded-0 text-center" name="email" id="email" placeholder="Enter a valid email address">
           <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
         </div>
+        <?php
+        if(isset($_SESSION["error"])){
+            $error = $_SESSION["error"];
+            echo "<div class='text-center alert alert-danger p-1 col-md-5 mx-auto mt-2 mt-md-0' role='alert'>$error</div>";
+        }
+      ?>  
       </form>
   </footer>
 
