@@ -196,10 +196,24 @@ header h2 + p {
   align-items: center;
   justify-content: center;
   position: relative;
+  outline: none;
 }
 
-.darkmode--activated .header-button {
+.header-button:focus {
+  outline: none;
+}
+
+.header-button:hover {
   background-color: #232323;
+}
+
+
+.darkmode--activated .header-button {
+  background-color: #232323 !important;
+}
+
+.darkmode--activated .header-button:hover {
+  background-color: var(--primary-color) !important;
 }
 
 .coming-soon-plaster {
@@ -532,6 +546,7 @@ header h2 + p {
   border-radius: 5px !important;
   bottom: -50px;
   left: 140px;
+  animation-iteration-count: infinite;
 }
 
 @media (max-width: 990px) {
@@ -760,6 +775,7 @@ header h2 + p {
 .preview-section {
   margin-bottom: 103px;
   background-color: var(--secondary-color);
+  overflow: hidden;
 }
 
 
@@ -1019,4 +1035,10 @@ footer p {
 .mfp-with-zoom.mfp-removing .mfp-container, 
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
+}
+
+
+
+.border-2 {
+  border-width:2px !important;
 }

@@ -48,7 +48,7 @@
       </div>
       <div class="container">
         <div class="row">
-        <div id="countdown" class="col-12"></div>
+        <div id="countdown" class="col-12 anim-hero"></div>
         </div>
       </div>
       
@@ -60,9 +60,10 @@
       <form class="form-group mt-4 mx-auto anim-hero" method="POST" action="submit.php">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
-            class="form-control mb-2 header-input rounded-0 text-center text-md-left" name="email" id="email" placeholder="Enter a valid email address">
-          <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
+            class="form-control mb-2 header-input rounded-0 text-center text-md-left input-top" name="email" id="email" placeholder="Enter a valid email address">
+          <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me" onclick="return val()">
         </div>
+        <div class="j-error"></div>
         <?php
         if(isset($_SESSION["error"])){
             $error = $_SESSION["error"];
@@ -106,7 +107,7 @@
 
               <h4>Realistic Values</h4>
             </div>
-            <p class="text-center text-lg-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantitu surveyors</p>
+            <p class="text-center text-lg-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantity surveyors</p>
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
@@ -126,8 +127,8 @@
 
 
     <div class="container-fluid px-0">
-      <h2 class="text-center col-lg-6 col-md-9 mx-auto px-5 breakdown-heading" data-aos="fade-in">
-        Here's a Quick Breakdown of Fow it Works
+      <h2 class="text-center col-lg-6 col-md-9 mx-auto px-5 breakdown-heading" data-aos="fade-up">
+        Here's a Quick Breakdown of How it Works
       </h2>
       <!-- First image container -->
       <div class="step-1-container">
@@ -135,7 +136,7 @@
         <div class="container-fluid">
           <div class="row text-white pl-lg-5">
             <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex 
-              d-lg-block flex-column align-items-center mb-5 mb-lg-0" >
+              d-lg-block flex-column align-items-center mb-5 mb-lg-0" data-aos="fade-left">
               <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
               <h3 class="pl-lg-5 text-center text-lg-left">Submit a Request</h3>
               <p class="pl-lg-5 text-center text-lg-left">
@@ -145,8 +146,10 @@
               </p>
             </div>
             <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
-              <img class="img-responsive step2-img text-center" src="./assets/images/step1.svg" alt="preview image of the website">
-              <ion-icon src="./assets/images/icon2.svg" class="icon-2 ml-lg-5 pl-lg-5"></ion-icon>
+              <img class="img-responsive step2-img text-center" src="./assets/images/step1.svg" 
+              alt="preview image of the website" data-aos="fade-right" data-aos-delay="200">
+              <ion-icon src="./assets/images/icon2.svg" class="icon-2 ml-lg-5 pl-lg-5"
+               data-aos="fade-down" data-aos-delay="400" data-aos-offset="100"></ion-icon>
             </div>
           </div>
         </div>
@@ -157,10 +160,11 @@
 
       <!-- second image container  -->
       <div class="row step-2-container pr-lg-5">
-        <div class="col-lg-7 first-image-container order-2 order-lg-1 d-flex d-lg-block justify-content-center flex-column">
+        <div class="col-lg-7 first-image-container order-2 order-lg-1 d-flex d-lg-block 
+        justify-content-center flex-column" data-aos="fade-left">
           <img class="img-responsive step2-img text-center" src="./assets/images/step2.svg" alt="preview image of the website">
         </div>
-        <div class="col-lg-5 first-text-container order-1 order-lg-2 mb-5 mb-lg-0 d-flex d-lg-block flex-column align-items-center">
+        <div class="col-lg-5 first-text-container order-1 order-lg-2 mb-5 mb-lg-0 d-flex d-lg-block flex-column align-items-center" data-aos="fade-right">
           <ion-icon src="./assets/images/icon 3.svg" class="icon-one pr-lg-5"></ion-icon>
           <h3 class="pr-lg-5 text-center text-lg-left">View Bill of Quantities(BOQ)</h3>
           <p class="pr-lg-5 mr-lg-5 text-center text-lg-left">
@@ -172,7 +176,7 @@
 
       <!-- Third image container -->
       <div class="row step-3-container pl-lg-5">
-        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center">
+        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center" data-aos="fade-left">
           <ion-icon src="./assets/images/icon 4.svg" class="icon-one pl-lg-5"></ion-icon>
           <h3 class="pl-lg-5 text-center text-lg-left">Available for you in real time</h3>
           <p class="pl-lg-5 text-center text-lg-left mb-5 mb-lg-0">
@@ -180,7 +184,7 @@
           All downloads are encrypted and must comply with our terms and conditions.
           </p>
         </div>
-        <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
+        <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column" data-aos="fade-right">
           <img class="img-responsive step2-img text-center" src="./assets/images/step3.svg" alt="preview image of the website">
         </div>
       </div>
@@ -189,20 +193,21 @@
     <div class="container-fluid px-0">
       <!-- dashboard-image-container -->
       <div class="dashboard-container text-center">
-        <ion-icon src="./assets/images/dash.svg" class="icon-dash"></ion-icon>
-        <h3 class="stupid">Well detailed dashboard</h3>
+        <ion-icon src="./assets/images/dash.svg" class="icon-dash" data-aos="fade-in"></ion-icon>
+        <h3 class="" data-aos="fade-up">Well detailed dashboard</h3>
         <div class="dash-image-wrapper text-center">
           <div class="second-underlay d-none d-lg-block"></div>
-          <img src="./assets/images/dashboard-latest (1).svg" alt="preview of the site dashboard page" class="dashboard-img">
+          <img src="./assets/images/dashboard-latest (1).svg" alt="preview of the site dashboard page" class="dashboard-img"
+          data-aos="fade-up">
         </div>
       </div>
     </div>
 
     <div class="preview-section">
       <div class="container-fluid">
-        <h2 class="text-center stupid">Pages preview</h2>
+        <h2 class="text-center" data-aos="fade-up">Pages preview</h2>
         <div class="row justify-content-around preview-top popup-gallery magnify px-3 responsive">
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Landing Page">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Landing Page" data-aos="fade-right">
             <div class="preview-overlay">
               <div>
               <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
@@ -211,7 +216,7 @@
             </div>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
-          <a href="./assets/images/Home-CB.svg" class="mb-5 mx-2 mx-lg-0" title="Home Page">
+          <a href="./assets/images/Home-CB.svg" class="mb-5 mx-2 mx-lg-0" title="Home Page" data-aos="fade-up">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
@@ -220,7 +225,7 @@
             </div>
             <img src="./assets/images/Hero Section.svg" alt="preview of website">
           </a>
-          <a href="./assets/images/Dashboard (2).svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
+          <a href="./assets/images/Dashboard (2).svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0" data-aos="fade-left">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
@@ -229,7 +234,7 @@
             </div>
             <img src="./assets/images/Dashboard (2).svg" alt="preview of website">
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Canvas" class="mb-5 mx-2 mx-lg-0">
+          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Canvas" class="mb-5 mx-2 mx-lg-0" data-aos="fade-right">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
@@ -238,7 +243,7 @@
             </div>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
           </a>
-          <a href="./assets/images/Evaluation request.svg" class="mb-5 mx-2 mx-lg-0" title="Form Page">
+          <a href="./assets/images/Evaluation request.svg" class="mb-5 mx-2 mx-lg-0" title="Form Page" data-aos="fade-up">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
@@ -247,7 +252,7 @@
             </div>
             <img src="./assets/images/Evaluation request.svg" alt="preview of website">
           </a>
-          <a href="./assets/images/Evaluation request-2.svg" title="Result Page">
+          <a href="./assets/images/Evaluation request-2.svg" title="Result Page" data-aos="fade-left">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
@@ -261,9 +266,9 @@
     </div>
   </main>
   <footer class="text-center">
-    <h3>Be the first to know when we launch</h3>
-    <p>Subscribe to our newsletter to stay informed</p>
-    <form class="form-group mt-4 mx-auto" method="POST" action="submit.php">
+    <h3 data-aos="fade-up">Be the first to know when we launch</h3>
+    <p data-aos="fade-up">Subscribe to our newsletter to stay informed</p>
+    <form class="form-group mt-4 mx-auto" method="POST" action="submit.php" data-aos="fade-up">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
             class="form-control mb-2 header-input rounded-0 text-center" name="email" id="email" placeholder="Enter a valid email address">
@@ -271,8 +276,12 @@
         </div>
         <?php
         if(isset($_SESSION["error"])){
-            $error = $_SESSION["error"];
-            echo "<div class='text-center alert alert-danger p-1 col-md-5 mx-auto mt-2 mt-md-0' role='alert'>$error</div>";
+          $error = $_SESSION["error"];
+          echo "<div class='text-center alert alert-danger p-1 col-md-5 mx-auto mt-2 mt-md-0' role='alert'>$error</div>";
+        }
+        if(isset($_SESSION["success"])){
+          $success = $_SESSION["success"];
+          echo "<div class='text-center alert alert-success p-1 col-md-5 mx-auto mt-2 mt-md-0' role='alert'>$success</div>";
         }
       ?>  
       </form>
@@ -306,24 +315,6 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <!-- custom css -->
     <script src="./assets/js/custom.js"></script>
-    <script>
-
-        // gsap.from('.container', {
-        //   opacity: 1, 
-        //   duration: 1, 
-        //   y: 150, 
-        // })
-
-        // gsap.from('.container', {
-        //   opacity: 1, 
-        //   duration: 1, 
-        //   y: 150, 
-        // })
-
-
-
-
-    </script>
   </body>
 </html>
 
@@ -337,5 +328,8 @@
     if(isset($_SESSION["error"])){
       unset($_SESSION["error"]);
       
+    }
+    if(isset($_SESSION["success"])){
+      unset($_SESSION["success"]);
     }
 ?>  

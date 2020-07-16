@@ -5,15 +5,18 @@ AOS.init({
   easing: 'ease-in',
   offset: 70,
   duration: 700,
+  delay: 70
 });
 
 // logic for the preloader and animate hero section
 $(window).on('load', function () {
-  $('#status').delay(300).fadeOut()
-  $('#preloader').delay(600).fadeOut()
-  // $('#countdown').addClass('animate__animated animate__bounce')
-  gsap.from('.anim-hero', {opacity: 0, duration: 1, y: 60, stagger: 0.4});
+  $('#status').delay(200).fadeOut()
+  $('#preloader').delay(500).fadeOut()
+  gsap.from('.anim-hero', {opacity: 0, duration: 0.7, y: 70, stagger: 0.4});
 })
+
+
+
 
 
 //scroll trigger
@@ -90,6 +93,18 @@ $('.darkmode-toggle').on('click', () => {
   }
 })
 
+
+// javascript validation of form
+function val() {
+  const email = $(".input-top").val();
+  if (!email) {
+    $(".input-top").addClass("border border-danger border-2");
+    return false;
+  } else {
+    $(".input-top").addClass("border border-success border-2");
+    return true;
+  }
+}
 
 
 
