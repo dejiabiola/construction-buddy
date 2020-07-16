@@ -5,13 +5,13 @@ AOS.init({
   easing: 'ease-in',
   offset: 70,
   duration: 700,
-  delay: 70
+  delay: 50
 });
 
 // logic for the preloader and animate hero section
 $(window).on('load', function () {
   $('#status').delay(200).fadeOut()
-  $('#preloader').delay(500).fadeOut()
+  $('#preloader').delay(400).fadeOut()
   gsap.from('.anim-hero', {opacity: 0, duration: 0.7, y: 70, stagger: 0.4});
 })
 
@@ -86,6 +86,7 @@ var options = {
 
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
+
 
 $('.darkmode-toggle').on('click', () => {
   if (darkmode.isActivated()) {

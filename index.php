@@ -93,7 +93,7 @@
                 <circle cx="42.5" cy="11.5" r="11.5" fill="#E67109"/>
               </svg>
 
-              <h4>Easy to use</h4>
+              <h4>Easy to Use</h4>
             </div>
             <p class="text-center text-lg-left px-2 px-md-0">Break myths and impossibilities with our easy to use user interface</p>
           </div>
@@ -178,7 +178,7 @@
       <div class="row step-3-container pl-lg-5">
         <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center" data-aos="fade-left">
           <ion-icon src="./assets/images/icon 4.svg" class="icon-one pl-lg-5"></ion-icon>
-          <h3 class="pl-lg-5 text-center text-lg-left">Available for you in real time</h3>
+          <h3 class="pl-lg-5 text-center text-lg-left">Available for you in Real Time</h3>
           <p class="pl-lg-5 text-center text-lg-left mb-5 mb-lg-0">
           The BOQ provided can be downloaded as a CSV file or printed directly from the system. 
           All downloads are encrypted and must comply with our terms and conditions.
@@ -194,7 +194,7 @@
       <!-- dashboard-image-container -->
       <div class="dashboard-container text-center">
         <ion-icon src="./assets/images/dash.svg" class="icon-dash" data-aos="fade-in"></ion-icon>
-        <h3 class="" data-aos="fade-up">Well detailed dashboard</h3>
+        <h3 class="" data-aos="fade-up">Well Detailed Dashboard</h3>
         <div class="dash-image-wrapper text-center">
           <div class="second-underlay d-none d-lg-block"></div>
           <img src="./assets/images/dashboard-latest (1).svg" alt="preview of the site dashboard page" class="dashboard-img"
@@ -205,16 +205,16 @@
 
     <div class="preview-section">
       <div class="container-fluid">
-        <h2 class="text-center" data-aos="fade-up">Pages preview</h2>
+        <h2 class="text-center" data-aos="fade-up">Pages Preview</h2>
         <div class="row justify-content-around preview-top popup-gallery magnify px-3 responsive">
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Landing Page" data-aos="fade-right">
+          <a href="./assets/images/Landing PAGE.svg" class="mb-5 mx-2 mx-lg-0" title="Landing Page" data-aos="fade-right">
             <div class="preview-overlay">
               <div>
               <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
               <p class="text-center">Landing</p>
               </div>
             </div>
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <img src="./assets/images/Hero-landing page.svg" alt="preview of website">
           </a>
           <a href="./assets/images/Home-CB.svg" class="mb-5 mx-2 mx-lg-0" title="Home Page" data-aos="fade-up">
             <div class="preview-overlay">
@@ -225,23 +225,23 @@
             </div>
             <img src="./assets/images/Hero Section.svg" alt="preview of website">
           </a>
-          <a href="./assets/images/Dashboard (2).svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0" data-aos="fade-left">
+          <a href="./assets/images/Dashboard.svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0" data-aos="fade-left">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
                 <p class="text-center">Dashboard</p>
               </div>
             </div>
-            <img src="./assets/images/Dashboard (2).svg" alt="preview of website">
+            <img src="./assets/images/Dashboard.svg" alt="preview of website">
           </a>
-          <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Canvas" class="mb-5 mx-2 mx-lg-0" data-aos="fade-right">
+          <a href="./assets/images/Canvas.svg" title="Canvas" class="mb-5 mx-2 mx-lg-0" data-aos="fade-right">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
                 <p class="text-center">Canvas</p>
               </div>
             </div>
-            <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
+            <img src="./assets/images/Canvas.svg" alt="preview of website">
           </a>
           <a href="./assets/images/Evaluation request.svg" class="mb-5 mx-2 mx-lg-0" title="Form Page" data-aos="fade-up">
             <div class="preview-overlay">

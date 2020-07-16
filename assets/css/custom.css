@@ -161,15 +161,7 @@ header h2 + p {
   border-radius: 5px 0px 0px 5px !important;
 }
 
-/* .header-button:after {
-  content: 'kbbm,n,jhkjmnm,';
-  display: block;
-  color: red;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right:20;
-} */
+
 
 ::placeholder {
   font-family: var(--text-font);
@@ -197,6 +189,16 @@ header h2 + p {
   justify-content: center;
   position: relative;
   outline: none;
+}
+
+.header-button:after {
+  content: '🥺';
+  display: block;
+  color: red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:20;
 }
 
 .header-button:focus {
