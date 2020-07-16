@@ -45,7 +45,7 @@
       if ($result == true) {
         echo "saved";
         $_SESSION["success"] = "Registered successfully 😙";
-        header("Location:index.php");
+        header("Location:mail-success.php");
         exit();
       } else {
         echo "Omo, something wrong o 💀: " . mysqli_error($db);
