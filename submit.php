@@ -8,6 +8,7 @@
   // $db_password = "l-79Xg/>sqeV8VZ]";
   // $db_tablename = "submissions";
 
+  
   // Config for heroku clearDB database
   $db_host = 'us-cdbr-east-02.cleardb.com';
   $db_name = 'heroku_ba9cfc94fc33b61';

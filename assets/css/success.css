@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+p:first-of-type {
+  margin-top: 70px;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.illustration {
+  height: 500px;
+  width: 500px;
+  max-width: 100%;
+}
+
+.back-button {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  color: #E67109;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  color: #E67109;
+}
+

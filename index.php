@@ -124,7 +124,7 @@
 
 
     <div class="container-fluid px-0">
-      <h2 class="text-center col-lg-6 col-md-9 mx-auto px-5 breakdown-heading">Here's a quick breakdown of how it works</h2>
+      <h2 class="text-center col-lg-6 col-md-9 mx-auto px-5 breakdown-heading">Here's a Quick Breakdown of Fow it Works</h2>
       <!-- First image container -->
       <div class="step-1-container">
         <div class="first-underlay d-none d-md-block"></div>
@@ -132,11 +132,11 @@
           <div class="row text-white pl-lg-5">
             <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center mb-5 mb-lg-0">
               <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
-              <h3 class="pl-lg-5 text-center text-lg-left">Clearly defined prompts</h3>
+              <h3 class="pl-lg-5 text-center text-lg-left">Submit a Request</h3>
               <p class="pl-lg-5 text-center text-lg-left">
-                All you need to do is provide information about the property you want to build and leave the 
-                rest to our artificial intelligence powered algoritm.
-                Our clearly defined prompts, help make this step easier
+                All you need to do is provide information either by filling a form or through the integrated
+                autoCAD canvas about the property you want to build and our 
+                artificial intelligence powered technology calculates the material cost of the building.
               </p>
             </div>
             <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
@@ -157,9 +157,10 @@
         </div>
         <div class="col-lg-5 first-text-container order-1 order-lg-2 mb-5 mb-lg-0 d-flex d-lg-block flex-column align-items-center">
           <ion-icon src="./assets/images/icon 3.svg" class="icon-one pr-lg-5"></ion-icon>
-          <h3 class="pr-lg-5 text-center text-lg-left">Well detailed summary</h3>
+          <h3 class="pr-lg-5 text-center text-lg-left">View Bill of Quantities(BOQ)</h3>
           <p class="pr-lg-5 mr-lg-5 text-center text-lg-left">
-          Afterwards, a well detailed summary of all materials needed is generated to suit the information you provided
+          Afterwards, a Bill of quantities(BOQ) that provides specific measured quantities of the items provided by the user, 
+          is generated.
           </p>
         </div>
       </div>
@@ -170,8 +171,8 @@
           <ion-icon src="./assets/images/icon 4.svg" class="icon-one pl-lg-5"></ion-icon>
           <h3 class="pl-lg-5 text-center text-lg-left">Available for you in real time</h3>
           <p class="pl-lg-5 text-center text-lg-left mb-5 mb-lg-0">
-            The summary provided can be downloaded as a CSV file or printed directly from the system. 
-            All downloads are encrypted and must comply with our terms and conditions
+          The BOQ provided can be downloaded as a CSV file or printed directly from the system. 
+          All downloads are encrypted and must comply with our terms and conditions.
           </p>
         </div>
         <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
@@ -187,7 +188,7 @@
         <h3 class="stupid">Well detailed dashboard</h3>
         <div class="dash-image-wrapper text-center">
           <div class="second-underlay d-none d-lg-block"></div>
-          <img src="./assets/images/Dashboard (2).svg" alt="preview of the site dashboard page" class="dashboard-img">
+          <img src="./assets/images/dashboard-latest (1).svg" alt="preview of the site dashboard page" class="dashboard-img">
         </div>
       </div>
     </div>
@@ -197,34 +198,58 @@
         <h2 class="text-center stupid">Pages preview</h2>
         <div class="row justify-content-around preview-top popup-gallery magnify px-3">
           <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Landing Page">
-            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <div class="preview-overlay">
+              <div>
+              <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+              <p class="text-center">Landing</p>
+              </div>
+            </div>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
-            <p class="text-center">Landing Page</p>
           </a>
           <a href="./assets/images/Home-CB.svg" class="mb-5 mx-2 mx-lg-0" title="Home Page">
-            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
-            <img src="./assets/images/Home-CB.svg" alt="preview of website">
-            <p class="text-center">Home Page</p>
+            <div class="preview-overlay">
+              <div>
+                <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+                <p class="text-center">Home</p>
+              </div>
+            </div>
+            <img src="./assets/images/Hero Section.svg" alt="preview of website">
           </a>
           <a href="./assets/images/Dashboard (2).svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0">
-            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <div class="preview-overlay">
+              <div>
+                <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+                <p class="text-center">Dashboard</p>
+              </div>
+            </div>
             <img src="./assets/images/Dashboard (2).svg" alt="preview of website">
-            <p class="text-center">Dashboard</p>
           </a>
           <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" title="Canvas" class="mb-5 mx-2 mx-lg-0">
-            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <div class="preview-overlay">
+              <div>
+                <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+                <p class="text-center">Canvas</p>
+              </div>
+            </div>
             <img src="./assets/images/dummy_368x368_ffffff_cccccc.png" alt="preview of website">
-            <p class="text-center">Canvas</p>
           </a>
           <a href="./assets/images/Evaluation request.svg" class="mb-5 mx-2 mx-lg-0" title="Form Page">
-            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <div class="preview-overlay">
+              <div>
+                <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+                <p class="text-center">Form Page</p>
+              </div>
+            </div>
             <img src="./assets/images/Evaluation request.svg" alt="preview of website">
-            <p class="text-center">Form Page</p>
           </a>
           <a href="./assets/images/Evaluation request-2.svg" title="Result Page">
-            <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+            <div class="preview-overlay">
+              <div>
+                <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
+                <p class="text-center">Result Page</p>
+              </div>
+            </div>
             <img src="./assets/images/Evaluation request-2.svg" alt="preview of website">
-            <p class="text-center">Result Page</p>
           </a>
         </div>
       </div>

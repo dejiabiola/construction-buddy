@@ -271,23 +271,22 @@ header h2 + p {
   }
 
   .header-input {
+    height: 50px;
     width: 303.31px;
-    height: 31px;
     padding-bottom: 10px;
     display: flex;
-    font-size: 8px;
+    font-size: 16px;
+    border: none;
   }
 
   ::placeholder {
-    font-size: 7.98969px;
-    line-height: 10px;
+    font-size: 15.98969px;
   }
 
   .header-button {
     width: 137.66px;
-    height: 31px;
-    font-size: 8.94845px;
-    line-height: 11px;
+    height: 50px;
+    font-size: 16.94845px;
   }
 
 }
@@ -328,7 +327,7 @@ header h2 + p {
   }
 
   header h2 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px;
   }
 
@@ -339,21 +338,12 @@ header h2 + p {
 
   .header-input {
     width: 303.31px;
-    height: 31px;
     padding-bottom: 10px;
     display: flex;
-    font-size: 8px;
-  }
-
-  ::placeholder {
-    font-size: 7.98969px;
-    line-height: 10px;
   }
 
   .header-button {
     width: 137.66px;
-    height: 31px;
-    font-size: 8.94845px;
     line-height: 11px;
   }
 
@@ -792,36 +782,82 @@ header h2 + p {
   height: 368px;
   max-width: 100%;
   object-fit: contain;
-  box-shadow: 0px 12.99px 32.4749px rgba(23, 29, 29, 0.1);
   z-index: -1;
 }
 
 .popup-gallery a {
   position: relative;
+  height: 368px;
+  transition: .5s ease;
+  overflow: hidden;
 }
 
-.popup-gallery .img-hover {
+
+/* 
+.popup-gallery .preview-overlay {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top:0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 999;
   transform: translate(-50%, -40%);
-  width: 33px;
-  height: 33px;
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  /* transition: display 3s; */
+  width: 100%;
+
+} */
+
+.preview-overlay{
+  width:100%;
+  height: 0;
+  opacity: 0;
+  position:absolute;
+  top:0px;
+  left:0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity .4s ease-out;
+  overflow: hidden;
 }
 
-.popup-gallery a:hover .img-hover {
-  display: block;
+ .preview-overlay div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.preview-overlay div p {
+  color: var(--secondary-color);
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.img-hover {
+  width: 33px;
+  height: 33px;
+  margin-bottom: 23px;
+}
+
+.popup-gallery a:hover .preview-overlay {
+  opacity: 1;
+  height: 100%;
   z-index: 9999;
 }
 
 .mfp-close {
-  color: red !important;
-  font-size: 70px !important;
-  margin-right: 50px !important;
-  margin-top: 30px !important;
+  color: black !important;
+  font-size: 45px !important;
+  margin-right: 20px !important;
+  margin-top: 20px !important;
+  cursor: pointer !important;
 }
 
 

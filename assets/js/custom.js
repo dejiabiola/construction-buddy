@@ -97,6 +97,11 @@ $('.darkmode-toggle').on('click', () => {
 // });
 
 
+if ($('.error-message')) {
+  console.log('true')
+}
+
+
 
 
   
