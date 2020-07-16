@@ -21,6 +21,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+  <link rel="stylesheet" href="./assets/css/slick/slick.css">
+  <link rel="stylesheet" href="./assets/css/slick/slick-theme.css">
    <!-- Custom css -->
    <link rel="stylesheet" href="./assets/css/custom.css">
    <style>
@@ -196,7 +198,7 @@
     <div class="preview-section">
       <div class="container-fluid">
         <h2 class="text-center stupid">Pages preview</h2>
-        <div class="row justify-content-around preview-top popup-gallery magnify px-3">
+        <div class="row justify-content-around preview-top popup-gallery magnify px-3 responsive">
           <a href="./assets/images/dummy_368x368_ffffff_cccccc.png" class="mb-5 mx-2 mx-lg-0" title="Landing Page">
             <div class="preview-overlay">
               <div>
@@ -298,6 +300,7 @@
     <script src="./assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- DArkMode.js -->
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+    <script src="./assets/js/slick/slick.min.js"></script>
     <!-- custom css -->
     <script src="./assets/js/custom.js"></script>
   </body>
