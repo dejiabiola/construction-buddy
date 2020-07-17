@@ -53,7 +53,7 @@
       </div>
       
 
-      <h2 class="anim-hero">Construction Buddy is Coming Soon!</h2>
+      <h2 class="anim-hero">Material cost estimate for any building at the tip of your finger</h2>
       <p class="col-md-9 col-lg-6 px-lg-5 mx-auto anim-hero">Be the first to know when our site is up and running</p>
       <!-- form that submits to the email to the backend and database -->
       
