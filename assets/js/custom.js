@@ -2,9 +2,9 @@
 // Animate on scroll logic
 AOS.init({
   once: true,
-  easing: 'ease-in',
+  easing: 'ease',
   offset: 70,
-  duration: 700,
+  duration: 800,
   delay: 50
 });
 

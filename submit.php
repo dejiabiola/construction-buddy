@@ -1,6 +1,8 @@
 <?php
   session_start();
 
+  
+
   // Config for heroku clearDB database
   $db_host = 'us-cdbr-east-02.cleardb.com';
   $db_name = 'heroku_ba9cfc94fc33b61';

@@ -40,10 +40,12 @@
 
     <!-- ionicons -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-     <!-- DArkMode.js -->
-     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+    <script src="./assets/js/cofetti/confetti.js"></script>
     <!-- custom css -->
     <script src="./assets/js/custom.js"></script>
+    <script>
+      startConfetti();
+    </script>
   </body>
 </html>
 

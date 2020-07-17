@@ -61,7 +61,10 @@
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
             class="form-control mb-2 header-input rounded-0 text-center text-md-left input-top" name="email" id="email" placeholder="Enter a valid email address">
-          <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me" onclick="return val()">
+          <button class="submit p-2 header-button" name="submit" type="submit" value="Notify Me" onclick="return val()">
+            Notify Me
+            <img src="./assets/images/next.svg" alt="" class="d-none d-lg-block">
+          </button>
         </div>
         <div class="j-error"></div>
         <?php
@@ -97,7 +100,7 @@
             </div>
             <p class="text-center text-lg-left px-2 px-md-0">Break myths and impossibilities with our easy to use user interface</p>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="15.8262" y="6.32666" width="31" height="31" transform="rotate(30 15.8262 6.32666)" fill="#141415" class="change-fill"/>
@@ -109,7 +112,7 @@
             </div>
             <p class="text-center text-lg-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantity surveyors</p>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="31" height="31" fill="#141415" class="change-fill"/>
@@ -271,8 +274,11 @@
     <form class="form-group mt-4 mx-auto" method="POST" action="submit.php" data-aos="fade-up">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
-            class="form-control mb-2 header-input rounded-0 text-center" name="email" id="email" placeholder="Enter a valid email address">
-          <input class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
+            class="form-control mb-2 header-input rounded-0 text-center text-md-left" name="email" id="email" placeholder="Enter a valid email address">
+          <button class="submit p-2 header-button" name="submit" type="submit" value="Notify Me">
+            Notify Me
+            <img src="./assets/images/next.svg" alt="" class="d-none d-lg-block">
+          </button>
         </div>
         <?php
         if(isset($_SESSION["error"])){
