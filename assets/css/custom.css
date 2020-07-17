@@ -6,8 +6,8 @@
 :root {
   --header-font: 'Optima', serif;
   --text-font: 'Barlow', sans-serif;
-  --primary-color: #141415;;
-  --secondary-color: #FFFFFF;
+  --secondary-color: #141415;;
+  --primary-color: #FFFFFF;
   --grey-color: #777777;
   --button-hover-color: rgb(49, 47, 47);
   --black-color: #000000;
@@ -45,6 +45,11 @@
   font-style: normal;
   font-weight: bold;
   src: local('Optima Bold'), url('../font/OPTIMA_B.woff') format('woff');
+  }
+
+
+  body {
+    background-color: black !important;
   }
 
 /* *** bootstrap override *** */
@@ -99,7 +104,7 @@ header {
   justify-content: space-between;
   font-weight: normal !important;
   font-family: var(--header-font) !important;
-  color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
   font-weight: 600;
   margin-bottom: 64px;
   margin-top: 83px;
@@ -173,8 +178,8 @@ header h2 + p {
 }
 
 .header-button {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   width: 243px;
   height: 97px;
   font-family: var(--text-font);
