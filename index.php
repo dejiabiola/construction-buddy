@@ -225,14 +225,14 @@
             </div>
             <img src="./assets/images/Hero Section.svg" alt="preview of website">
           </a>
-          <a href="./assets/images/Dashboard.svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0" data-aos="fade-left">
+          <a href="./assets/images/dash-preview.svg" title="Dashboard Page" class="mb-5 mx-2 mx-lg-0" data-aos="fade-left">
             <div class="preview-overlay">
               <div>
                 <ion-icon src="./assets/images/img-hover.svg" class="img-hover"></ion-icon>
                 <p class="text-center">Dashboard</p>
               </div>
             </div>
-            <img src="./assets/images/Dashboard.svg" alt="preview of website">
+            <img src="./assets/images/dash-preview.svg" alt="preview of website">
           </a>
           <a href="./assets/images/Canvas.svg" title="Canvas" class="mb-5 mx-2 mx-lg-0" data-aos="fade-right">
             <div class="preview-overlay">
