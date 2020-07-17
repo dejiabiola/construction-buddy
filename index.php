@@ -48,18 +48,19 @@
       </div>
       <div class="container">
         <div class="row">
-        <div id="countdown" class="col-12 anim-hero"></div>
+        <div id="countdown" class="col-12 anim-hero" data-aos="flip-up"></div>
         </div>
       </div>
       
 
-      <h2 class="anim-hero">Material cost estimate for any building at the tip of your finger</h2>
-      <p class="col-md-9 col-lg-6 px-lg-5 mx-auto anim-hero">Be the first to know when our product is up and running</p>
+      <h2 class="anim-hero" data-aos="flip-up" data-aos-delay="200">Material cost estimate for any building at the tip of your finger</h2>
+      <p class="col-md-9 col-lg-6 px-lg-5 mx-auto anim-hero" data-aos="flip-up" data-aos-delay="400">Be the first to know when our product is up and running</p>
       <!-- form that submits to the email to the backend and database -->
       
       <form class="form-group mt-4 mx-auto anim-hero" method="POST" action="submit.php">
-        <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
+        <div data-aos="zoom-in" data-aos-delay="400" class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
+            
             class="form-control mb-2 header-input rounded-0 text-center text-md-left input-top" 
             name="email" id="email" placeholder="Enter a valid email address"
             <?php 
