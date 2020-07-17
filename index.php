@@ -79,7 +79,7 @@
     <div class="container-fluid">
       <!-- Our Story section -->
       <div class="story-section">
-        <h2 class="text-center story-header text-uppercase" data-aos="fade-in">Our Story</h2>
+        <h2 class="text-center story-header" data-aos="fade-in">Our Story</h2>
         <p class="text-center col-lg-8 px-0 mx-auto" data-aos="fade-up">Construction buddy helps engineers, realtors and individuals carry out evaluation of building materials. 
           Our evaluations are powered by a combination of the experience of several expert engineers and quantity surveyors
           and our powerful artifial intelligence technology.
@@ -279,10 +279,6 @@
           $error = $_SESSION["error"];
           echo "<div class='text-center alert alert-danger p-1 col-md-5 mx-auto mt-2 mt-md-0' role='alert'>$error</div>";
         }
-        if(isset($_SESSION["success"])){
-          $success = $_SESSION["success"];
-          echo "<div class='text-center alert alert-success p-1 col-md-5 mx-auto mt-2 mt-md-0' role='alert'>$success</div>";
-        }
       ?>  
       </form>
   </footer>
@@ -328,8 +324,5 @@
     if(isset($_SESSION["error"])){
       unset($_SESSION["error"]);
       
-    }
-    if(isset($_SESSION["success"])){
-      unset($_SESSION["success"]);
     }
 ?>  
