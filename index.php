@@ -200,8 +200,9 @@
         </div>
       </div>
     </div>
-<!-- 
+
     <div class="container-fluid px-0">
+      <!-- dashboard-image-container -->
       <div class="dashboard-container text-center">
         <ion-icon src="./assets/images/dash.svg" class="icon-dash" data-aos="fade-in"></ion-icon>
         <h3 class="" data-aos="zoom-in-up">Well Detailed Dashboard</h3>
@@ -211,7 +212,7 @@
           data-aos="zoom-in-up">
         </div>
       </div>
-    </div> -->
+    </div>
 
     <div class="preview-section">
       <div class="container-fluid">
