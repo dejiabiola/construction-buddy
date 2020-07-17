@@ -60,7 +60,15 @@
       <form class="form-group mt-4 mx-auto anim-hero" method="POST" action="submit.php">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
-            class="form-control mb-2 header-input rounded-0 text-center text-md-left input-top" name="email" id="email" placeholder="Enter a valid email address">
+            class="form-control mb-2 header-input rounded-0 text-center text-md-left input-top" 
+            name="email" id="email" placeholder="Enter a valid email address"
+            <?php 
+              if(isset($_SESSION["email"])){
+                $email = $_SESSION["email"];
+                echo "value=" . $email;
+              }
+            ?>
+            >
           <button class="submit p-2 header-button" name="submit" type="submit" value="Notify Me" onclick="return val()">
             Notify Me
             <img src="./assets/images/next.svg" alt="" class="d-none d-lg-block">
@@ -331,4 +339,10 @@
       unset($_SESSION["error"]);
       
     }
+
+    if(isset($_SESSION["email"])){
+      unset($_SESSION["email"]);
+      
+    }
 ?>  
+

@@ -26,6 +26,7 @@
 
     // VAlidate Email
     if(!checkemail($email)){
+      $_SESSION['email'] = $email;
       $_SESSION["error"] = "This email is invalid. Please try again";
       header("Location:index.php");
       exit;
@@ -39,6 +40,7 @@
 
     // Check if email exists
     if(mysqli_num_rows($res_e) > 0){
+      $_SESSION['email'] = $email;
       $_SESSION["error"] = "This email has already been registered";
       header("Location:index.php");
   	} else {
@@ -56,6 +58,7 @@
         exit;
         die();
       } else {
+        $_SESSION['email'] = $email;
         $_SESSION["error"] = "An error occured, please contact support";
         header("Location:index.php");
         exit;
