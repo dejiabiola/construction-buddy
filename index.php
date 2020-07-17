@@ -48,7 +48,7 @@
       </div>
       <div class="container">
         <div class="row">
-        <div id="countdown" class="col-12 anim-hero text-white" data-aos="flip-up"></div>
+        <div id="countdown" class="col-12 anim-hero" data-aos="flip-up"></div>
         </div>
       </div>
       
@@ -90,7 +90,7 @@
   <main class="main-section">
     <div class="container-fluid">
       <!-- Our Story section -->
-      <!-- <div class="story-section">
+      <div class="story-section">
         <h2 class="text-center story-header" data-aos="fade-in">Our Story</h2>
         <p class="text-center col-lg-8 px-0 mx-auto" data-aos="zoom-in-up">Construction buddy helps engineers, realtors and individuals carry out evaluation of building materials. 
           Our evaluations are powered by a combination of the experience of several expert engineers and quantity surveyors
@@ -132,7 +132,7 @@
             <p class="text-center text-lg-left px-2 px-md-0">Get available data in real time and on the go</p>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
 
@@ -143,13 +143,13 @@
       </h2>
       <!-- First image container -->
       <div class="step-1-container">
-        <!-- <div class="first-underlay d-none d-md-block"></div> -->
+        <div class="first-underlay d-none d-md-block"></div>
         <div class="container-fluid">
           <div class="row text-white pl-lg-5">
             <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex 
               d-lg-block flex-column align-items-center mb-5 mb-lg-0" data-aos="zoom-in-left">
               <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
-              <h3 class="pl-lg-5 text-center text-lg-left text-white">Submit a Request</h3>
+              <h3 class="pl-lg-5 text-center text-lg-left">Submit a Request</h3>
               <p class="pl-lg-5 text-center text-lg-left">
                 All you need to do is provide information either by filling a form or through the integrated
                 autoCAD canvas about the property you want to build and our 
@@ -320,7 +320,7 @@
     <!-- magnific pop-up -->
     <script src="./assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- DArkMode.js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
     <script src="./assets/js/slick/slick.min.js"></script>
     <!-- custom css -->
     <script src="./assets/js/custom.js"></script>
