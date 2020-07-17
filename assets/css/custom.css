@@ -333,7 +333,7 @@ header h2 + p {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
-    min-height: 500px;
+    min-height: 600px;
   }
 
 
