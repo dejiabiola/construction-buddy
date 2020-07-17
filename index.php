@@ -35,9 +35,9 @@
   <body>
 
    <!-- *** Preloader Starts *** -->
-   <div id="preloader">
+   <!-- <div id="preloader">
       <div id="status">&nbsp;</div>
-    </div>
+    </div> -->
     <!-- Preloader End -->
 
   <!-- ***Header Section *** -->
