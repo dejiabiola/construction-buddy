@@ -9,11 +9,11 @@ AOS.init({
 });
 
 // logic for the preloader and animate hero section
-$(window).on('load', function () {
-  $('#status').delay(200).fadeOut()
-  $('#preloader').delay(400).fadeOut()
-  gsap.from('.anim-hero', {opacity: 0, duration: 0.7, y: 70, stagger: 0.4});
-})
+// $(window).on('load', function () {
+//   $('#status').delay(200).fadeOut()
+//   $('#preloader').delay(400).fadeOut()
+//   gsap.from('.anim-hero', {opacity: 0, duration: 0.7, y: 70, stagger: 0.4});
+// })
 
 
 
