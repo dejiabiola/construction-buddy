@@ -35,9 +35,9 @@
   <body>
 
    <!-- *** Preloader Starts *** -->
-   <!-- <div id="preloader">
+   <div id="preloader">
       <div id="status">&nbsp;</div>
-    </div> -->
+    </div>
     <!-- Preloader End -->
 
   <!-- ***Header Section *** -->
@@ -54,7 +54,7 @@
       
 
       <h2 class="anim-hero">Material cost estimate for any building at the tip of your finger</h2>
-      <p class="col-md-9 col-lg-6 px-lg-5 mx-auto anim-hero">Be the first to know when our site is up and running</p>
+      <p class="col-md-9 col-lg-6 px-lg-5 mx-auto anim-hero">Be the first to know when our product is up and running</p>
       <!-- form that submits to the email to the backend and database -->
       
       <form class="form-group mt-4 mx-auto anim-hero" method="POST" action="submit.php">
@@ -94,7 +94,6 @@
         <p class="text-center col-lg-8 px-0 mx-auto" data-aos="fade-up">Construction buddy helps engineers, realtors and individuals carry out evaluation of building materials. 
           Our evaluations are powered by a combination of the experience of several expert engineers and quantity surveyors
           and our powerful artifial intelligence technology.
-          This solution is out to curb the hassle that comes with evaluation and is a promising measure to save cost of operation
         </p>
         <div class="row mx-md-5 px-md-5 story-bullets">
           <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up">
