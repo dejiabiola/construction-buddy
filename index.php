@@ -30,6 +30,7 @@
        outline: 1px solid red;
      } */
 
+
     </style>
   </head>
   <body>
@@ -97,7 +98,7 @@
           and our powerful artifial intelligence technology.
         </p>
         <div class="row mx-md-5 px-md-5 story-bullets">
-          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="zoom-in-up">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="23" width="31" height="31" fill="#141415" class="change-fill"/>
@@ -108,7 +109,7 @@
             </div>
             <p class="text-center text-lg-left px-2 px-md-0">Break myths and impossibilities with our easy to use user interface</p>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="zoom-in-up">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-up">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="15.8262" y="6.32666" width="31" height="31" transform="rotate(30 15.8262 6.32666)" fill="#141415" class="change-fill"/>
@@ -120,7 +121,7 @@
             </div>
             <p class="text-center text-lg-left px-2 px-md-0">Our BOQ are all evaluated by reputable engineers and quantity surveyors</p>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="zoom-in-up">
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0" data-aos="fade-left">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-end story-icon-wrapper">
               <svg class="mb-4 mb-lg-0 mr-lg-5 story-icon" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="31" height="31" fill="#141415" class="change-fill"/>
@@ -147,7 +148,7 @@
         <div class="container-fluid">
           <div class="row text-white pl-lg-5">
             <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex 
-              d-lg-block flex-column align-items-center mb-5 mb-lg-0" data-aos="zoom-in-left">
+              d-lg-block flex-column align-items-center mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="230">
               <ion-icon src="./assets/images/icon.svg" class="icon-one pl-lg-5"></ion-icon>
               <h3 class="pl-lg-5 text-center text-lg-left">Submit a Request</h3>
               <p class="pl-lg-5 text-center text-lg-left">
@@ -158,7 +159,7 @@
             </div>
             <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
               <img class="img-responsive step2-img text-center" src="./assets/images/step1.svg" 
-              alt="preview image of the website" data-aos="zoom-in-right" data-aos-delay="200">
+              alt="preview image of the website">
               <ion-icon src="./assets/images/icon2.svg" class="icon-2 ml-lg-5 pl-lg-5"
                data-aos="fade-down" data-aos-delay="400" data-aos-offset="100"></ion-icon>
             </div>
@@ -172,10 +173,10 @@
       <!-- second image container  -->
       <div class="row step-2-container pr-lg-5">
         <div class="col-lg-7 first-image-container order-2 order-lg-1 d-flex d-lg-block 
-        justify-content-center flex-column" data-aos="zoom-in-left">
+        justify-content-center flex-column">
           <img class="img-responsive step2-img text-center" src="./assets/images/step2.svg" alt="preview image of the website">
         </div>
-        <div class="col-lg-5 first-text-container order-1 order-lg-2 mb-5 mb-lg-0 d-flex d-lg-block flex-column align-items-center" data-aos="zoom-in-right">
+        <div class="col-lg-5 first-text-container order-1 order-lg-2 mb-5 mb-lg-0 d-flex d-lg-block flex-column align-items-center" data-aos="fade-left" data-aos-delay="300">
           <ion-icon src="./assets/images/icon 3.svg" class="icon-one pr-lg-5"></ion-icon>
           <h3 class="pr-lg-5 text-center text-lg-left">View Bill of Quantities(BOQ)</h3>
           <p class="pr-lg-5 mr-lg-5 text-center text-lg-left">
@@ -187,7 +188,7 @@
 
       <!-- Third image container -->
       <div class="row step-3-container pl-lg-5">
-        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center" data-aos="zoom-in-left">
+        <div class="col-lg-5 first-text-container pl-lg-5 pr-lg-4 d-flex d-lg-block flex-column align-items-center" data-aos="fade-right">
           <ion-icon src="./assets/images/icon 4.svg" class="icon-one pl-lg-5"></ion-icon>
           <h3 class="pl-lg-5 text-center text-lg-left">Available for you in Real Time</h3>
           <p class="pl-lg-5 text-center text-lg-left mb-5 mb-lg-0">
@@ -195,7 +196,7 @@
           All downloads are encrypted and must comply with our terms and conditions.
           </p>
         </div>
-        <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column" data-aos="zoom-in-right">
+        <div class="col-lg-7 first-image-container d-flex d-lg-block justify-content-center flex-column">
           <img class="img-responsive step2-img text-center" src="./assets/images/step3.svg" alt="preview image of the website">
         </div>
       </div>
@@ -277,9 +278,9 @@
     </div>
   </main>
   <footer class="text-center">
-    <h3 data-aos="zoom-in-up">Be the first to know when we launch</h3>
-    <p data-aos="zoom-in-up">Subscribe to our newsletter to stay informed</p>
-    <form class="form-group mt-4 mx-auto" method="POST" action="submit.php" data-aos="zoom-in-up">
+    <h3 data-aos="fade-left">Be the first to know when we launch</h3>
+    <p data-aos="fade-right">Subscribe to our newsletter to stay informed</p>
+    <form class="form-group mt-4 mx-auto" method="POST" action="submit.php" data-aos="fade-up">
         <div class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center text-center align-items-md-start">
           <input type="email"
             class="form-control mb-2 header-input rounded-0 text-center text-md-left" name="email" id="email" placeholder="Enter a valid email address">

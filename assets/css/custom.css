@@ -56,6 +56,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 /* *** Preloader *** */
 #preloader {
   background: #fff;
@@ -905,6 +907,7 @@ footer {
   position: relative;
   padding-bottom: 40px;
   z-index: 1000;
+  overflow: hidden;
 }
 
 footer h3 {
