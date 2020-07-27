@@ -93,6 +93,7 @@ header {
   width: 100%;
   min-height: 100vh;
   z-index: -9;
+  overflow: hidden;
 }
 
 
@@ -397,10 +398,12 @@ header h2 + p {
 .main-section {
   padding-top: 100px;
   z-index: 100;
+  overflow: hidden;
 }
 
 .main-top {
   padding-bottom: 126px;
+  overflow: hidden;
 }
 
  .breakdown-heading {
@@ -946,6 +949,10 @@ footer p {
   footer p {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  footer .header-input {
+    border: 1px solid grey;
   }
 }
 
